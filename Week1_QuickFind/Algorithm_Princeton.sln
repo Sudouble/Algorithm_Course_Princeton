@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week1_QuickFind", "Week1_QuickFind\Week1_QuickFind.vcxproj", "{AA54F10F-42F1-411D-8653-E65FE8170C57}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week1_QuickUnion_Lazy", "Week1_QuickUnion_Lazy\Week1_QuickUnion_Lazy.vcxproj", "{A3293D6C-2AE3-4AC8-9BFB-995BEF166775}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week1_WeightedQuickUnion", "Week1_WeightedQuickUnion\Week1_WeightedQuickUnion.vcxproj", "{F6EF42CE-097D-4E75-ACEF-AC168A384FF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA54F10F-42F1-411D-8653-E65FE8170C57}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AA54F10F-42F1-411D-8653-E65FE8170C57}.Debug|Win32.Build.0 = Debug|Win32
+		{AA54F10F-42F1-411D-8653-E65FE8170C57}.Release|Win32.ActiveCfg = Release|Win32
+		{AA54F10F-42F1-411D-8653-E65FE8170C57}.Release|Win32.Build.0 = Release|Win32
+		{A3293D6C-2AE3-4AC8-9BFB-995BEF166775}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A3293D6C-2AE3-4AC8-9BFB-995BEF166775}.Debug|Win32.Build.0 = Debug|Win32
+		{A3293D6C-2AE3-4AC8-9BFB-995BEF166775}.Release|Win32.ActiveCfg = Release|Win32
+		{A3293D6C-2AE3-4AC8-9BFB-995BEF166775}.Release|Win32.Build.0 = Release|Win32
+		{F6EF42CE-097D-4E75-ACEF-AC168A384FF2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F6EF42CE-097D-4E75-ACEF-AC168A384FF2}.Debug|Win32.Build.0 = Debug|Win32
+		{F6EF42CE-097D-4E75-ACEF-AC168A384FF2}.Release|Win32.ActiveCfg = Release|Win32
+		{F6EF42CE-097D-4E75-ACEF-AC168A384FF2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
