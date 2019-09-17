@@ -17,6 +17,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w2_3_Dijkstra_two_stack_alg
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w3_1_SelectionSort", "w3_1_SelectionSort\w3_1_SelectionSort.vcxproj", "{A06ED0F5-2DD0-4E9C-9FD0-863CEBB85015}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w3_2_InsertionSort", "w3_2_InsertionSort\w3_2_InsertionSort.vcxproj", "{10B43AE1-C8E4-4399-A8BD-8D3D5A513643}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w3_3_ShellSort", "w3_3_ShellSort\w3_3_ShellSort.vcxproj", "{CB2A716D-F525-4897-85B0-80A8C7BDA649}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -55,6 +59,14 @@ Global
 		{A06ED0F5-2DD0-4E9C-9FD0-863CEBB85015}.Debug|Win32.Build.0 = Debug|Win32
 		{A06ED0F5-2DD0-4E9C-9FD0-863CEBB85015}.Release|Win32.ActiveCfg = Release|Win32
 		{A06ED0F5-2DD0-4E9C-9FD0-863CEBB85015}.Release|Win32.Build.0 = Release|Win32
+		{10B43AE1-C8E4-4399-A8BD-8D3D5A513643}.Debug|Win32.ActiveCfg = Debug|Win32
+		{10B43AE1-C8E4-4399-A8BD-8D3D5A513643}.Debug|Win32.Build.0 = Debug|Win32
+		{10B43AE1-C8E4-4399-A8BD-8D3D5A513643}.Release|Win32.ActiveCfg = Release|Win32
+		{10B43AE1-C8E4-4399-A8BD-8D3D5A513643}.Release|Win32.Build.0 = Release|Win32
+		{CB2A716D-F525-4897-85B0-80A8C7BDA649}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB2A716D-F525-4897-85B0-80A8C7BDA649}.Debug|Win32.Build.0 = Debug|Win32
+		{CB2A716D-F525-4897-85B0-80A8C7BDA649}.Release|Win32.ActiveCfg = Release|Win32
+		{CB2A716D-F525-4897-85B0-80A8C7BDA649}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
