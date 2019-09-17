@@ -1,31 +1,21 @@
-﻿生成启动时间为 2019/9/16 11:31:49。
-     1>项目“D:\Project\vs2010\Algorithm_Course_Princeton\Week1_QuickFind\Week1_QuickFind\Week1_QuickFind.vcxproj”在节点 2 上(build 个目标)。
+﻿生成启动时间为 2019/9/17 13:31:52。
+     1>项目“D:\Project\vs2010\Algorithm_Course_Princeton\Week1_QuickFind\Week1_QuickFind.vcxproj”在节点 5 上(build 个目标)。
      1>InitializeBuildStatus:
-         正在创建“Debug\Week1_QuickFind.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+         正在创建“Debug\w1_1_QuickFind.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          所有输出均为最新。
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Week1_QuickFind.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Week1_QuickFind.cpp
-         Week1_QuickFind.cpp
-     1>d:\project\vs2010\algorithm_course_princeton\week1_quickfind\week1_quickfind\week1_quickfind.cpp(34): warning C4018: “<”: 有符号/无符号不匹配
-     1>d:\project\vs2010\algorithm_course_princeton\week1_quickfind\week1_quickfind\week1_quickfind.cpp(52): warning C4018: “<”: 有符号/无符号不匹配
-     1>d:\project\vs2010\algorithm_course_princeton\week1_quickfind\week1_quickfind\week1_quickfind.cpp(56): warning C4018: “<”: 有符号/无符号不匹配
+         所有输出均为最新。
        ManifestResourceCompile:
          所有输出均为最新。
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Project\vs2010\Algorithm_Course_Princeton\Week1_QuickFind\Debug\Week1_QuickFind.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Week1_QuickFind.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Project\vs2010\Algorithm_Course_Princeton\Week1_QuickFind\Debug\Week1_QuickFind.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Project\vs2010\Algorithm_Course_Princeton\Week1_QuickFind\Debug\Week1_QuickFind.lib" /MACHINE:X86 Debug\Week1_QuickFind.exe.embed.manifest.res
-         Debug\stdafx.obj
-         Debug\Week1_QuickFind.obj
+         所有输出均为最新。
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Week1_QuickFind.exe.embed.manifest" /manifest Debug\Week1_QuickFind.exe.intermediate.manifest
          所有输出均为最新。
-       LinkEmbedManifest:
-         所有输出均为最新。
-         Week1_QuickFind.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Week1_QuickFind\Debug\Week1_QuickFind.exe
        FinalizeBuildStatus:
-         正在删除文件“Debug\Week1_QuickFind.unsuccessfulbuild”。
-         正在对“Debug\Week1_QuickFind.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“D:\Project\vs2010\Algorithm_Course_Princeton\Week1_QuickFind\Week1_QuickFind\Week1_QuickFind.vcxproj”(build 个目标)的操作。
+         正在删除文件“Debug\w1_1_QuickFind.unsuccessfulbuild”。
+         正在对“Debug\w1_1_QuickFind.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Project\vs2010\Algorithm_Course_Princeton\Week1_QuickFind\Week1_QuickFind.vcxproj”(build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.26
+已用时间 00:00:00.05

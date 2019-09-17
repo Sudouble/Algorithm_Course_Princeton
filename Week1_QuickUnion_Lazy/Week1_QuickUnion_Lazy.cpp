@@ -27,6 +27,7 @@ vector<int> vecIndex;
 vector<int> vecID;
 
 void Init();
+int GetRootID(int index);
 
 void connect(int index, int index2)
 {
