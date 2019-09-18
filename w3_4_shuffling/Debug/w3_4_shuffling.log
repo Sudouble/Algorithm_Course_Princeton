@@ -1,12 +1,12 @@
-﻿生成启动时间为 2019/9/17 16:43:25。
+﻿生成启动时间为 2019/9/18 15:01:23。
      1>项目“D:\Project\vs2010\Algorithm_Course_Princeton\w3_4_shuffling\w3_4_shuffling.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
-         正在创建“Debug\w3_4_shuffling.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+         正在对“Debug\w3_4_shuffling.unsuccessfulbuild”执行 Touch 任务。
        ClCompile:
          所有输出均为最新。
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\w3_4_shuffling.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt w3_4_shuffling.cpp
          w3_4_shuffling.cpp
-     1>d:\project\vs2010\algorithm_course_princeton\w3_4_shuffling\w3_4_shuffling.cpp(22): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\project\vs2010\algorithm_course_princeton\w3_4_shuffling\w3_4_shuffling.cpp(23): warning C4018: “<”: 有符号/无符号不匹配
        ManifestResourceCompile:
          所有输出均为最新。
        Link:
@@ -26,4 +26,4 @@
 
 生成成功。
 
-已用时间 00:00:01.27
+已用时间 00:00:01.67

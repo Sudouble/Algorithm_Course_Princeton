@@ -95,6 +95,18 @@ void CalcPolar(const PointF &src, PointF &dest)
 	dest.length = length;
 }
 
+void CalcPolar(vector<PointF> &vecIn)
+{
+	int minYIndex = FindMinYPoint(vecIn);
+	for (int i = 0; i < vecIn.size(); i++)
+	{
+		if (i == minYIndex)
+			continue;
+
+		CalcPolar(vecIn[minYIndex], vecIn[i]);
+	}
+}
+
 int calcArea(PointF a, PointF b, PointF c)
 {
 	double area = (b.x-a.x)*(c.y-a.y)-(b.y-a.y)*(c.x-a.x);

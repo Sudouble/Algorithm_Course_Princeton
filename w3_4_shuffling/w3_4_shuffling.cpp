@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include <cstdio>
+#include <time.h>
 #include <vector>
 #include <iostream>
 using namespace std;
@@ -36,6 +37,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	vecIn.assign(index, index+sizeof(index)/sizeof(int));
 	Print(vecIn);
 
+	srand(int(time(0)));
 	Shuffling(vecIn);
 
 	cout << "After Shuffle: ";
