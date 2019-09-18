@@ -59,22 +59,18 @@ void BinaryHeap::swim(int pos)
 
 void BinaryHeap::sink(int pos)
 {
-	int childLeft = pos*2;
-	int childRight = pos*2+1;
-
-	while (pos < vecTree.size()-1)
+	while ((2*pos) < vecTree.size()-1)
 	{
-		if (vecTree[pos] < vecTree[childLeft])
+		int j = 2 * pos;
+		if (vecTree[pos] < vecTree[j])
+			swap(vecTree[pos], vecTree[j]);
+		else if (vecTree[pos] < vecTree[j + 1])
 		{
-			swap(vecTree[pos], vecTree[childLeft]);
-			pos = childLeft;
+			j++;
+			swap(vecTree[pos], vecTree[j]);
 		}
 		else
-		{
-			swap(vecTree[pos], vecTree[childRight]);
-			pos = childRight;		
-		}
-		childLeft = pos*2;
-		childRight = pos*2+1;
+			break;
+		pos = j;
 	}	
 }
