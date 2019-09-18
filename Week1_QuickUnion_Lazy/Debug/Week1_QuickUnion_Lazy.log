@@ -1,5 +1,5 @@
-﻿生成启动时间为 2019/9/18 15:00:58。
-     1>项目“D:\Project\vs2010\Algorithm_Course_Princeton\Week1_QuickUnion_Lazy\Week1_QuickUnion_Lazy.vcxproj”在节点 4 上(build 个目标)。
+﻿生成启动时间为 2019/9/18 16:35:32。
+     1>项目“D:\Project\vs2010\Algorithm_Course_Princeton\Week1_QuickUnion_Lazy\Week1_QuickUnion_Lazy.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\w1_2_QuickUnion_Lazy.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:

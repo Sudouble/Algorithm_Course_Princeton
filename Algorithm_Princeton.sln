@@ -29,6 +29,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w3_6_MergeSort", "w4_6_Merg
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w3_7_QuickSort", "w3_7_QuickSort\w3_7_QuickSort.vcxproj", "{1FD9E5BB-871E-4CEE-81EA-6CB6AD6DB9A0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w3_8_quick_selection", "w3_8_quick_selection\w3_8_quick_selection.vcxproj", "{BAFDB86E-BB6D-44EB-AD27-746B737035E9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w3_9_3way_partition", "w4_9_3way_partition\w4_9_3way_partition.vcxproj", "{3A8E7CA1-3E8C-4257-B4C3-F6AE03957214}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -91,6 +95,14 @@ Global
 		{1FD9E5BB-871E-4CEE-81EA-6CB6AD6DB9A0}.Debug|Win32.Build.0 = Debug|Win32
 		{1FD9E5BB-871E-4CEE-81EA-6CB6AD6DB9A0}.Release|Win32.ActiveCfg = Release|Win32
 		{1FD9E5BB-871E-4CEE-81EA-6CB6AD6DB9A0}.Release|Win32.Build.0 = Release|Win32
+		{BAFDB86E-BB6D-44EB-AD27-746B737035E9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BAFDB86E-BB6D-44EB-AD27-746B737035E9}.Debug|Win32.Build.0 = Debug|Win32
+		{BAFDB86E-BB6D-44EB-AD27-746B737035E9}.Release|Win32.ActiveCfg = Release|Win32
+		{BAFDB86E-BB6D-44EB-AD27-746B737035E9}.Release|Win32.Build.0 = Release|Win32
+		{3A8E7CA1-3E8C-4257-B4C3-F6AE03957214}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3A8E7CA1-3E8C-4257-B4C3-F6AE03957214}.Debug|Win32.Build.0 = Debug|Win32
+		{3A8E7CA1-3E8C-4257-B4C3-F6AE03957214}.Release|Win32.ActiveCfg = Release|Win32
+		{3A8E7CA1-3E8C-4257-B4C3-F6AE03957214}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
