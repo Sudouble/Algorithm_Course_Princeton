@@ -14,7 +14,7 @@
     <ProjectGuid>{EEAA1D7F-0362-4EA1-BF49-79D46F598152}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>w4_5_ConvecHull</RootNamespace>
-    <ProjectName>w4_5_ConvexHull</ProjectName>
+    <ProjectName>w3_5_ConvexHull</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

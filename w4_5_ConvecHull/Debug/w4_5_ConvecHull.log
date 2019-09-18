@@ -1,30 +1,16 @@
-﻿生成启动时间为 2019/9/17 17:39:10。
+﻿生成启动时间为 2019/9/18 11:06:27。
      1>项目“D:\Project\vs2010\Algorithm_Course_Princeton\w4_5_ConvecHull\w4_5_ConvecHull.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
-         正在对“Debug\w4_5_ConvexHull.unsuccessfulbuild”执行 Touch 任务。
+         正在创建“Debug\w3_5_ConvexHull.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          所有输出均为最新。
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\w4_5_ConvexHull.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt w4_5_ConvecHull.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\w3_5_ConvexHull.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt w4_5_ConvecHull.cpp
          w4_5_ConvecHull.cpp
-     1>d:\project\vs2010\algorithm_course_princeton\w4_5_convechull\w4_5_convechull.cpp(60): warning C4018: “<”: 有符号/无符号不匹配
-     1>d:\project\vs2010\algorithm_course_princeton\w4_5_convechull\w4_5_convechull.cpp(97): warning C4018: “<”: 有符号/无符号不匹配
-       ManifestResourceCompile:
-         所有输出均为最新。
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w4_5_ConvexHull.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\w4_5_ConvexHull.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w4_5_ConvexHull.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w4_5_ConvexHull.lib" /MACHINE:X86 Debug\w4_5_ConvexHull.exe.embed.manifest.res
-         Debug\stdafx.obj
-         Debug\w4_5_ConvecHull.obj
-       Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\w4_5_ConvexHull.exe.embed.manifest" /manifest Debug\w4_5_ConvexHull.exe.intermediate.manifest
-         所有输出均为最新。
-       LinkEmbedManifest:
-         所有输出均为最新。
-         w4_5_ConvecHull.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w4_5_ConvexHull.exe
-       FinalizeBuildStatus:
-         正在删除文件“Debug\w4_5_ConvexHull.unsuccessfulbuild”。
-         正在对“Debug\w4_5_ConvexHull.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“D:\Project\vs2010\Algorithm_Course_Princeton\w4_5_ConvecHull\w4_5_ConvecHull.vcxproj”(build 个目标)的操作。
+     1>d:\project\vs2010\algorithm_course_princeton\w4_5_convechull\w4_5_convechull.cpp(64): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\project\vs2010\algorithm_course_princeton\w4_5_convechull\w4_5_convechull.cpp(118): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\project\vs2010\algorithm_course_princeton\w4_5_convechull\w4_5_convechull.cpp(147): error C2660: “CalcPolar”: 函数不接受 1 个参数
+     1>已完成生成项目“D:\Project\vs2010\Algorithm_Course_Princeton\w4_5_ConvecHull\w4_5_ConvecHull.vcxproj”(build 个目标)的操作 - 失败。
 
-生成成功。
+生成失败。
 
-已用时间 00:00:01.49
+已用时间 00:00:02.18

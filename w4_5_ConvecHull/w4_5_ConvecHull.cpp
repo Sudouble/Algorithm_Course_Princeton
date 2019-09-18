@@ -5,6 +5,7 @@
 #include <vector>
 #include <iostream>
 #include <cmath>
+#include <stack>
 #include <algorithm>
 using namespace std;
 
@@ -94,46 +95,84 @@ void CalcPolar(const PointF &src, PointF &dest)
 	dest.length = length;
 }
 
-void CalcPolar(vector<PointF> &vecIn)
+int calcArea(PointF a, PointF b, PointF c)
 {
-	int minYIndex = FindMinYPoint(vecIn);
-	for (int i = 0; i < vecIn.size(); i++)
-	{
-		if (i == minYIndex)
-			continue;
-
-		CalcPolar(vecIn[minYIndex], vecIn[i]);
-	}
+	double area = (b.x-a.x)*(c.y-a.y)-(b.y-a.y)*(c.x-a.x);
+	if (area < 0)
+		return -1;
+	else if (area > 0)
+		return 1;
+	else
+		return 0;
 }
 
-bool isCounterClockWise(PointF newOne, PointF lastOne, PointF lastTwo)
+stack<PointF> GrahamScan( vector<PointF> &vecIn )
 {
-	CalcPolar(newOne, lastOne);
-	CalcPolar(newOne, lastTwo);
-
-	if (lastOne.angle < lastTwo.angle)
-		return false;
-	return true;
-}
-
-void ConvecHull(vector<PointF> &vecIn)
-{
-	CalcPolar(vecIn);
-	
-	// ≈≈–Ú
-	sort(vecIn.begin(), vecIn.end());
 	// ±È¿˙
 	//	   stack¥Êµ„µ»
+
+	stack<PointF> stackPoint;
+	stackPoint.push(vecIn[0]);
+	stackPoint.push(vecIn[1]);
+
+	for (int i = 2; i < vecIn.size();)
+	{
+		PointF b = stackPoint.top();
+		stackPoint.pop();
+
+		PointF a = stackPoint.top();
+		stackPoint.pop();
+
+		PointF c = vecIn[i];
+
+		int nResult = calcArea(a, b, c);
+		if (nResult > 0)
+		{
+			stackPoint.push(a);
+			stackPoint.push(b);
+			stackPoint.push(c);
+
+			i++;
+		}
+		else
+		{
+			stackPoint.push(a);
+		}
+	}
+	return stackPoint;
 }
 
+stack<PointF> ConvecHull(vector<PointF> &vecIn)
+{
+	CalcPolar(vecIn);
 
+	// ≈≈–Ú
+	sort(vecIn.begin(), vecIn.end());
+
+	return GrahamScan(vecIn);
+
+}
+
+void Print(stack<PointF> stack_)
+{
+	while (!stack_.empty())
+	{
+		PointF point = stack_.top();
+		stack_.pop();
+
+		cout << "(" << point.x << "," << point.y << "),";
+	}
+	cout << endl;
+}
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	cout << "(-2,-3),(2,1),(3,3),(2,6),(0,6),(-3,3)" << endl;
 	vector<PointF> vecPoints;
 	Init(vecPoints);
 
-	//
+	stack<PointF> result = ConvecHull(vecPoints);
+	Print(result);
 
 	return 0;
 }
