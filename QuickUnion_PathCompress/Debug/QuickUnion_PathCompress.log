@@ -1,5 +1,5 @@
-﻿生成启动时间为 2019/9/17 13:31:52。
-     1>项目“D:\Project\vs2010\Algorithm_Course_Princeton\QuickUnion_PathCompress\QuickUnion_PathCompress.vcxproj”在节点 2 上(build 个目标)。
+﻿生成启动时间为 2019/9/17 17:38:15。
+     1>项目“D:\Project\vs2010\Algorithm_Course_Princeton\QuickUnion_PathCompress\QuickUnion_PathCompress.vcxproj”在节点 5 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\w1_4_QuickUnion_PathCompress.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
