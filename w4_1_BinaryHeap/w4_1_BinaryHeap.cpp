@@ -53,6 +53,28 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "Head one:" << binaryHeap.delMax() << endl;
 	Print(binaryHeap.GetTree());
 
+	// https://algs4.cs.princeton.edu/24pq/
+	cout << endl << "ÑéÖ¤£ºhttps://algs4.cs.princeton.edu/24pq/" << endl;
+	vecStrExpect.clear();
+	vecStrExpect.push_back("-");
+	binaryHeap.Init(vecStrExpect);
+	binaryHeap.Insert("P");
+	binaryHeap.Insert("Q");
+	Print(binaryHeap.GetTree());
+	binaryHeap.Insert("E");
+	Print(binaryHeap.GetTree());
+	cout << "removing:" << binaryHeap.delMax() << endl;
+	binaryHeap.Insert("X");
+	binaryHeap.Insert("A");
+	binaryHeap.Insert("M");
+	Print(binaryHeap.GetTree());
+	cout << "removing:" << binaryHeap.delMax() << endl;
+	binaryHeap.Insert("P");
+	binaryHeap.Insert("L");
+	binaryHeap.Insert("E");	
+	cout << "removing:" << binaryHeap.delMax() << endl;
+	Print(binaryHeap.GetTree());
+
 	return 0;
 }
 

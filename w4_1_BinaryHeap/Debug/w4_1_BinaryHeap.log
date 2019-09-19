@@ -1,12 +1,12 @@
-﻿生成启动时间为 2019/9/18 18:07:41。
+﻿生成启动时间为 2019/9/19 9:22:00。
      1>项目“D:\Project\vs2010\Algorithm_Course_Princeton\w4_1_BinaryHeap\w4_1_BinaryHeap.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\w4_1_BinaryHeap.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          所有输出均为最新。
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\w4_1_BinaryHeap.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt BinaryHeap.cpp
-         BinaryHeap.cpp
-     1>d:\project\vs2010\algorithm_course_princeton\w4_1_binaryheap\binaryheap.cpp(65): warning C4018: “<”: 有符号/无符号不匹配
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\w4_1_BinaryHeap.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt w4_1_BinaryHeap.cpp
+         w4_1_BinaryHeap.cpp
+     1>d:\project\vs2010\algorithm_course_princeton\w4_1_binaryheap\w4_1_binaryheap.cpp(9): warning C4018: “<”: 有符号/无符号不匹配
        ManifestResourceCompile:
          所有输出均为最新。
        Link:
@@ -27,4 +27,4 @@
 
 生成成功。
 
-已用时间 00:00:01.35
+已用时间 00:00:01.27
