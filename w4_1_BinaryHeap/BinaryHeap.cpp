@@ -36,7 +36,7 @@ string BinaryHeap::delMax()
 	swap(vecTree[1], vecTree[removePos]);
 	sink(1);
 
-	vecTree.erase(vecTree.begin()+removePos+1);
+	vecTree.erase(vecTree.begin()+removePos);
 
 	return result;
 }
@@ -61,16 +61,18 @@ void BinaryHeap::sink(int pos)
 {
 	while ((2*pos) < vecTree.size()-1)
 	{
-		int j = 2 * pos;
-		if (vecTree[pos] < vecTree[j])
-			swap(vecTree[pos], vecTree[j]);
-		else if (vecTree[pos] < vecTree[j + 1])
+		int j = 2*pos;
+		if ((j+1) < (vecTree.size()-1)
+			&& vecTree[j] < vecTree[j+1])
 		{
-			j++;
+			j = j+1;
+			swap(vecTree[pos], vecTree[j]);
+		} 
+		else if (vecTree[pos] < vecTree[j])
+		{
 			swap(vecTree[pos], vecTree[j]);
 		}
-		else
-			break;
+
 		pos = j;
 	}	
 }
