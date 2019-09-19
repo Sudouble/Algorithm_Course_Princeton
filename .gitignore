@@ -1,4 +1,5 @@
 # Prerequisites
+*.opendb
 *.d
 *.opensdf
 *.tlog

@@ -4,14 +4,16 @@ using namespace std;
 
 struct Node{
 	string key;
-	int count;
+	int value;
 
 	Node *left;
 	Node *right;
+	int size;
 
-	Node() {
-		key = "";
-		count = 0;
+	Node(string key_, int value_, int size_) {
+		key = key_;
+		value = value_;
+		size = size_;
 		left = NULL;
 		right = NULL;
 	}
@@ -23,11 +25,24 @@ public:
 	BinarySearchTree(void);
 	~BinarySearchTree(void);
 
-	bool search(string str);
-	void insert(string key);
-	void put();
+	bool IsEmpty();
+
+	Node* search(string str);
+	void insert(string key, int value);
 	
-	void Delete();
+	void Delete(string key);
+	void DeleteMin();
+	void DeleteMax();
+
+private:
+	Node* put(Node* node, string str, int value);
+	Node* get(Node* node, string str);
+	int size(Node* node);
+
+	Node* DeleteMin(Node *node);
+	Node* DeleteMax(Node *node);
+	Node* Delete(Node* node, string key);
+	Node* GetMin(Node* node);
 
 private:
 	Node *root;
