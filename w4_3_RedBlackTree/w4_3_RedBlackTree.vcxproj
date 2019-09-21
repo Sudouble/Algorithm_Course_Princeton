@@ -152,7 +152,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="RedBlackTree.cpp" />
     <ClCompile Include="w4_3_RedBlackTree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RedBlackTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
