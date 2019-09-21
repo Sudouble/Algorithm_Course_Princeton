@@ -1,48 +1,61 @@
 #pragma once
 
 #include <string>
+#include <vector>
 #include <iostream>
 using namespace std;
 
-struct Node2D
+struct Node
 {
-	string key;
-	int value;
+	vector<string> vecStrKey;
+	vector<int> vecValue;
 
-	Node2D* left;
-	Node2D* right;
-	Node2D()
+	vector<Node*> childNode;
+	Node* parent;
+	
+	Node()
 	{
-		key = "";
-		value = 0;
-		left = NULL;
-		right = NULL;
+		parent = NULL;
+
+		vecStrKey.clear();
+		vecValue.clear();
+		childNode.clear();
+		childNode.push_back(NULL);
+		childNode.push_back(NULL);
 	}
-};
 
-struct Node3D
-{
-	string keyLeft;
-	int valueLeft;
-
-	string keyRight;
-	int valueRight;
-
-	Node3D* left;
-	Node3D* middle;
-	Node3D* right;
-	Node3D()
+	Node(string key, int value, Node* parent_)
 	{
-		key = "";
-		value = 0;
+		parent = parent_;
 
-		left = NULL;
-		middle = NULL;
-		right = NULL;
+		vecStrKey.push_back(key);
+		vecValue.push_back(value);
+
+		childNode.push_back(NULL);
+		childNode.push_back(NULL);
 	}
 };
 
 class BalancedSearchTree
 {
+public:
+	BalancedSearchTree();
+	
+	void Insert(string key, int value=0);
+	bool Contains(string key);
+
+private:
+	void put(Node* node, string key, int value);
+
+	int calcNodePos(Node* node, string key);	
+
+	bool IsEmpty();
+
+	Node* get(Node* node, string key);
+	void Node3(Node* node);
+	Node* UpdateParent(Node* node);
+
+private:
+	Node* root;
 };
 

@@ -2,10 +2,59 @@
 //
 
 #include <iostream>
+#include "BalancedSearchTree.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	//	A
+	// / \
+	//E	  S
+	BalancedSearchTree bst1;
+	bst1.Insert("A", 1);
+	bst1.Insert("E", 2);
+	bst1.Insert("S", 3);
+
+
+	//		     M
+	//		 /      \
+	//	    E        R
+	//	   /  \     / \
+	//  (A C)(H L) P  (S X)
+	//  / |\  /|\  /\  /|\
+
+	// 见算法第四版，p274
+	BalancedSearchTree bst2;
+	bst2.Insert("S");
+	bst2.Insert("E");
+	bst2.Insert("A");
+	bst2.Insert("R");
+	bst2.Insert("C");
+	bst2.Insert("H");
+	bst2.Insert("X");
+	bst2.Insert("M");
+	bst2.Insert("P");
+	bst2.Insert("L");
+
+	//		     H
+	//		 /       \
+	//	    C       (M R)
+	//	   /  \     /  |  \
+	//	  A    E   L   P (S X)
+	//   / \  / \  /\ /\  /|\
+	// 见算法第四版，p274
+	BalancedSearchTree bst3;
+	bst3.Insert("A");
+	bst3.Insert("C");
+	bst3.Insert("E");
+	bst3.Insert("H");
+	bst3.Insert("L");
+	bst3.Insert("M");
+	bst3.Insert("P");
+	bst3.Insert("R");
+	bst3.Insert("S");
+	bst3.Insert("X");
+
+	return 0;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
