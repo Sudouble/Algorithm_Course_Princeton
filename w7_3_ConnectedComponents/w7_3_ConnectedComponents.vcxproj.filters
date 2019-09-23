@@ -18,5 +18,19 @@
     <ClCompile Include="w7_3_ConnectedComponents.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="CC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UndirectedGraph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UndirectedGraph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

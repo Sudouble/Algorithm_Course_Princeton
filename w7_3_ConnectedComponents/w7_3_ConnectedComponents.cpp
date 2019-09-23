@@ -2,19 +2,37 @@
 //
 
 #include <iostream>
+#include "CC.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	UnDirectedGraph graph(13);
+	graph.AddEdge(0, 1);
+	graph.AddEdge(0, 2);
+	graph.AddEdge(0, 6);
+	graph.AddEdge(0, 5);
+	graph.AddEdge(5, 3);
+	graph.AddEdge(5, 4);
+	graph.AddEdge(4, 6);
+
+	graph.AddEdge(7, 8);	
+	
+	graph.AddEdge(9, 10);
+	graph.AddEdge(9, 11);
+	graph.AddEdge(9, 12);
+	graph.AddEdge(11, 12);
+
+	CC cc(graph);
+	
+	cout << "Is 0 3 connected ? " << cc.connect(0, 3) << endl;
+	cout << "Is 3 3 connected ? " << cc.connect(3, 3) << endl;
+	cout << "Is 7 8 connected ? " << cc.connect(7, 8) << endl;
+	cout << "Is 9 10 connected ? " << cc.connect(9, 10) << endl;
+	cout << "Is 0 10 connected ? " << cc.connect(0, 10) << endl;
+	cout << "Is 7 10 connected ? " << cc.connect(7, 10) << endl;
+
+	cout << "graph has 4, size: " << cc.size(3) << endl;
+	cout << "graph has 7, size: " << cc.size(7) << endl;
+	cout << "graph has 11, size: " << cc.size(11) << endl;
 }
 
-// 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
-// 调试程序: F5 或调试 >“开始调试”菜单
-
-// 入门使用技巧: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件

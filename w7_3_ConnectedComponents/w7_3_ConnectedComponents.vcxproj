@@ -151,7 +151,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CC.cpp" />
+    <ClCompile Include="UndirectedGraph.cpp" />
     <ClCompile Include="w7_3_ConnectedComponents.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CC.h" />
+    <ClInclude Include="UndirectedGraph.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
