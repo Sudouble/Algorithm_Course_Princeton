@@ -2,10 +2,33 @@
 //
 
 #include <iostream>
+#include "RedBlackTree.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	RedBlackTree rbt1;
+	rbt1.put("S", 1);
+	rbt1.put("E", 1);
+	rbt1.put("A", 1);
+	rbt1.put("R", 1);
+	rbt1.put("C", 1);
+	rbt1.put("H", 1);
+	rbt1.put("X", 1);
+	rbt1.put("M", 1);
+	rbt1.put("P", 1);
+	rbt1.put("L", 1);
+
+	RedBlackTree rbt2;
+	rbt2.put("A", 1);
+	rbt2.put("C", 1);
+	rbt2.put("E", 1);
+	rbt2.put("H", 1);
+	rbt2.put("L", 1);
+	rbt2.put("M", 1);
+	rbt2.put("P", 1);
+	rbt2.put("R", 1);
+	rbt2.put("S", 1);
+	rbt2.put("X", 1);
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

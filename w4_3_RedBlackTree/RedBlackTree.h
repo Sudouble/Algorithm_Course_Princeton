@@ -7,6 +7,11 @@ using std::string;
 class Node
 {
 public:
+	enum RBT_COLOR {
+		BLACK = 0,
+		RED = 1,
+	};
+public:
 	Node()
 	{
 		left = NULL;
@@ -14,6 +19,7 @@ public:
 		val = 0;
 		N = 1;
 		key = "";
+		color = RED;
 	}
 
 	Node(string key_, int val_)
@@ -23,12 +29,14 @@ public:
 		val = val_;
 		key = key_;
 		N = 1;
+		color = RED;
 	}
 
 public:
 	string key;
 	int val;
 	int N;
+	bool color;
 
 	Node* left;
 	Node* right;
@@ -37,9 +45,17 @@ public:
 class RedBlackTree
 {
 public:
+	RedBlackTree() {
+		root = NULL;
+	}
+	
+	bool IsRed(Node* h);
+	Node* rotateLeft(Node* h);
+	Node* rotateRight(Node* h);
+	Node* flipColors(Node* h);
+
 	int size();
 	int size(Node* x);
-
 
 	int get(string key);
 	int get(Node* x, string key);

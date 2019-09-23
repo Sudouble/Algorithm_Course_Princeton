@@ -1,5 +1,49 @@
 #include "RedBlackTree.h"
 
+bool RedBlackTree::IsRed(Node* h)
+{
+	if (h == NULL)
+		return false;
+	return h->color == Node::RED;
+}
+
+Node* RedBlackTree::rotateLeft(Node* h)
+{
+	Node* x = h->right;
+	h->right = x->left;
+	x->left = h;
+	x->color = h->color;
+	x->N = h->N;
+
+	h->color = Node::RED;
+	h->N = 1 + size(h->left) + size(h->right);
+
+	return x;
+}
+
+Node* RedBlackTree::rotateRight(Node* h)
+{
+	Node* x = h->left;
+	h->left= x->right;
+	x->right = h;
+	x->color = h->color;
+	x->N = h->N;
+
+	h->color = Node::RED;
+	h->N = 1 + size(h->left) + size(h->right);
+
+	return x;
+}
+
+Node* RedBlackTree::flipColors(Node* h)
+{
+	h->left->color = Node::BLACK;
+	h->right->color = Node::BLACK;
+	h->color = Node::RED;
+
+	return h;
+}
+
 int RedBlackTree::size()
 {
 	return size(root);
@@ -31,7 +75,11 @@ int RedBlackTree::get(Node* x, string key)
 
 void RedBlackTree::put(string key, int val)
 {
-	root = put(root, key, val);
+	if (root == NULL)
+		root = new Node(key, val);
+	else
+		root = put(root, key, val);
+	root->color = Node::BLACK;
 }
 
 Node* RedBlackTree::put(Node* x, string key, int val)
@@ -45,6 +93,13 @@ Node* RedBlackTree::put(Node* x, string key, int val)
 	else
 		x->val = val;
 
+	if (IsRed(x->right) && !IsRed(x->left))
+		x = rotateLeft(x);
+	if (IsRed(x->left) && IsRed(x->left->left))
+		x = rotateRight(x);
+	if (IsRed(x->left) && IsRed(x->right))
+		x = flipColors(x);	
+
 	x->N = 1 + size(x->left) + size(x->right);
 
 	return x;
@@ -52,7 +107,7 @@ Node* RedBlackTree::put(Node* x, string key, int val)
 
 int RedBlackTree::min()
 {
-	return min(root)->key;
+	return min(root)->val;
 }
 
 Node* RedBlackTree::min(Node* x)
@@ -71,7 +126,7 @@ int RedBlackTree::floor(string key)
 	{
 		return NULL;
 	}
-	return x->key;
+	return x->val;
 }
 
 Node* RedBlackTree::floor(Node* x, string key)
@@ -95,7 +150,7 @@ Node* RedBlackTree::floor(Node* x, string key)
 
 int RedBlackTree::select(int k)
 {
-	return select(root, k)->key;
+	return select(root, k)->val;
 }
 
 Node* RedBlackTree::select(Node* x, int k)
@@ -132,7 +187,7 @@ int RedBlackTree::rank(string key, Node* x)
 
 void RedBlackTree::deleteMin()
 {
-	root = deleteMin(root);
+	root = deleteMin(root);0
 }
 
 Node* RedBlackTree::deleteMin(Node* x)
