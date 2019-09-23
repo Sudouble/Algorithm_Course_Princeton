@@ -1,5 +1,7 @@
 ﻿  BalancedSearchTree.cpp
-E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\w5_1_2-3SearchTree\BalancedSearchTree.cpp(44,20): warning C4018:  “<”: 有符号/无符号不匹配
-E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\w5_1_2-3SearchTree\BalancedSearchTree.cpp(51): warning C4715:  “BalancedSearchTree::calcNodePos”: 不是所有的控件路径都返回值
-E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\w5_1_2-3SearchTree\BalancedSearchTree.cpp(78): warning C4715:  “BalancedSearchTree::get”: 不是所有的控件路径都返回值
-  w5_1_2-3SearchTree.vcxproj -> E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\Debug\w5_1_2-3SearchTree.exe
+  w5_1_2-3SearchTree.cpp
+  正在生成代码...
+D:\Project\vs2010\Algorithm_Course_Princeton\w5_1_2-3SearchTree\BalancedSearchTree.cpp(44,20): warning C4018:  “<”: 有符号/无符号不匹配
+D:\Project\vs2010\Algorithm_Course_Princeton\w5_1_2-3SearchTree\BalancedSearchTree.cpp(51): warning C4715:  “BalancedSearchTree::calcNodePos”: 不是所有的控件路径都返回值
+D:\Project\vs2010\Algorithm_Course_Princeton\w5_1_2-3SearchTree\BalancedSearchTree.cpp(78): warning C4715:  “BalancedSearchTree::get”: 不是所有的控件路径都返回值
+  w5_1_2-3SearchTree.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w5_1_2-3SearchTree.exe

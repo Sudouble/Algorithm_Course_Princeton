@@ -1,6 +1,2 @@
-﻿  stdafx.cpp
-  Week1_QuickFind.cpp
-E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\Week1_QuickFind\Week1_QuickFind.cpp(34,20): warning C4018:  “<”: 有符号/无符号不匹配
-E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\Week1_QuickFind\Week1_QuickFind.cpp(52,20): warning C4018:  “<”: 有符号/无符号不匹配
-E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\Week1_QuickFind\Week1_QuickFind.cpp(56,21): warning C4018:  “<”: 有符号/无符号不匹配
-  Week1_QuickFind.vcxproj -> E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\Debug\w1_1_QuickFind.exe
+﻿  Week1_QuickFind.cpp
+  Week1_QuickFind.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w1_1_QuickFind.exe

@@ -1,6 +1,7 @@
 ﻿  stdafx.cpp
   w3_3_ShellSort.cpp
-E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\w3_3_ShellSort\w3_3_ShellSort.cpp(14,11): warning C4018:  “<”: 有符号/无符号不匹配
-E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\w3_3_ShellSort\w3_3_ShellSort.cpp(19,21): warning C4018:  “<”: 有符号/无符号不匹配
-E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\w3_3_ShellSort\w3_3_ShellSort.cpp(35,20): warning C4018:  “<”: 有符号/无符号不匹配
-  w3_3_ShellSort.vcxproj -> E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\Debug\w3_3_ShellSort.exe
+D:\Project\vs2010\Algorithm_Course_Princeton\w3_3_ShellSort\w3_3_ShellSort.cpp(14,11): warning C4018:  “<”: 有符号/无符号不匹配
+D:\Project\vs2010\Algorithm_Course_Princeton\w3_3_ShellSort\w3_3_ShellSort.cpp(19,21): warning C4018:  “<”: 有符号/无符号不匹配
+D:\Project\vs2010\Algorithm_Course_Princeton\w3_3_ShellSort\w3_3_ShellSort.cpp(35,20): warning C4018:  “<”: 有符号/无符号不匹配
+  LINK : 没有找到 D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w3_3_ShellSort.exe 或上一个增量链接没有生成它；正在执行完全链接
+  w3_3_ShellSort.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w3_3_ShellSort.exe

@@ -1,6 +1,7 @@
 ﻿  stdafx.cpp
   w4_5_ConvecHull.cpp
-E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\w4_5_ConvecHull\w4_5_ConvecHull.cpp(64,20): warning C4018:  “<”: 有符号/无符号不匹配
-E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\w4_5_ConvecHull\w4_5_ConvecHull.cpp(101,20): warning C4018:  “<”: 有符号/无符号不匹配
-E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\w4_5_ConvecHull\w4_5_ConvecHull.cpp(130,20): warning C4018:  “<”: 有符号/无符号不匹配
-  w4_5_ConvecHull.vcxproj -> E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\Debug\w3_5_ConvexHull.exe
+D:\Project\vs2010\Algorithm_Course_Princeton\w4_5_ConvecHull\w4_5_ConvecHull.cpp(64,20): warning C4018:  “<”: 有符号/无符号不匹配
+D:\Project\vs2010\Algorithm_Course_Princeton\w4_5_ConvecHull\w4_5_ConvecHull.cpp(101,20): warning C4018:  “<”: 有符号/无符号不匹配
+D:\Project\vs2010\Algorithm_Course_Princeton\w4_5_ConvecHull\w4_5_ConvecHull.cpp(130,20): warning C4018:  “<”: 有符号/无符号不匹配
+  LINK : 没有找到 D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w3_5_ConvexHull.exe 或上一个增量链接没有生成它；正在执行完全链接
+  w4_5_ConvecHull.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w3_5_ConvexHull.exe
