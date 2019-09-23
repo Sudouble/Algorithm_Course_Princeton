@@ -13,6 +13,16 @@ void Print(const vector<int>& vecIn)
 	cout << endl;
 }
 
+void Print(queue<int> vecIn)
+{
+	while (!vecIn.empty())
+	{
+		cout << vecIn.front() << "->";
+		vecIn.pop();
+	}	
+	cout << endl;
+}
+
 int main()
 {
 
@@ -39,6 +49,7 @@ int main()
 	DepthFirstOrder dfo(digraph);
 
 	TopologicalSort ts(dfo);
+	Print(dfo.PreOrder());
 	Print(ts.GetVec());
 	// =====================================
 
@@ -57,8 +68,8 @@ int main()
 	digraph1.addEdge(Edge(6, 4));
 	digraph1.addEdge(Edge(3, 2));
 
-	DepthFirstOrder dfo1(digraph1);
+	DepthFirstOrder dfo1(digraph1);	
 
-	TopologicalSort ts1(dfo1);
+	TopologicalSort ts1(dfo1);	
 	Print(ts1.GetVec());
 }

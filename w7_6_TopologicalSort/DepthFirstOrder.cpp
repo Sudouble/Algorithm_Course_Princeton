@@ -11,7 +11,7 @@ DepthFirstOrder::DepthFirstOrder(Digraph& graph)
 	{
 		if (!vecMarked[v])
 			DFS(v);
-	}	
+	}
 }
 
 void DepthFirstOrder::DFS(int s)
@@ -19,11 +19,13 @@ void DepthFirstOrder::DFS(int s)
 	vecMarked[s] = true;
 	vecPreOrder.push(s);
 
-	for (int j : graph.adj(s))
+	vector<int> result = graph.adj(s);
+	for (int j = result.size()-1; j >= 0 ; j--)
 	{
-		if (!vecMarked[j])
+		int v = result[j];
+		if (!vecMarked[v])
 		{			
-			DFS(j);			
+			DFS(v);			
 		}
 	}
 
