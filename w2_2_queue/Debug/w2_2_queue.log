@@ -3,4 +3,5 @@
   Queue_LinkList.cpp
   w2_2_queue.cpp
   正在生成代码...
-  w2_2_queue.vcxproj -> E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\Debug\w2_2_queue.exe
+  LINK : 没有找到 D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w2_2_queue.exe 或上一个增量链接没有生成它；正在执行完全链接
+  w2_2_queue.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w2_2_queue.exe

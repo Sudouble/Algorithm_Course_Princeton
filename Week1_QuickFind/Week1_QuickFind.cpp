@@ -31,7 +31,7 @@ void connect(int index, int index2)
 	// 遍历一次花费较大
 	int nID = vecID[index];
 	int nID_Old = vecID[index2];
-	for (int i = 0; i < vecID.size(); i++)
+	for (size_t i = 0; i < vecID.size(); i++)
 	{
 		if (vecID[i] == nID_Old)
 		{
@@ -49,11 +49,11 @@ void Print()
 {
 	vector<bool> vecBMarked(vecID.size());
 
-	for (int i = 0; i < vecIndex.size(); i++)
+	for (size_t i = 0; i < vecIndex.size(); i++)
 	{
 		int nID = vecID[i];
 		bool bHasOut = false;
-		for (int j = 0; j < vecIndex.size(); j++)
+		for (size_t j = 0; j < vecIndex.size(); j++)
 		{
 			if (vecBMarked[j] == false && nID == vecID[j])
 			{

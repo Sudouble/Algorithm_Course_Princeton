@@ -52,7 +52,7 @@ Node* RedBlackTree::put(Node* x, string key, int val)
 
 int RedBlackTree::min()
 {
-	return min(root)->key;
+	return min(root)->val;
 }
 
 Node* RedBlackTree::min(Node* x)
@@ -71,7 +71,7 @@ int RedBlackTree::floor(string key)
 	{
 		return NULL;
 	}
-	return x->key;
+	return x->val;
 }
 
 Node* RedBlackTree::floor(Node* x, string key)
@@ -95,7 +95,7 @@ Node* RedBlackTree::floor(Node* x, string key)
 
 int RedBlackTree::select(int k)
 {
-	return select(root, k)->key;
+	return select(root, k)->val;
 }
 
 Node* RedBlackTree::select(Node* x, int k)

@@ -1,3 +1,7 @@
-﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (w4_3_RedBlackTree.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  RedBlackTree.cpp
-  w4_3_RedBlackTree.vcxproj -> E:\2.Software\Learning_Reading\Algorithm_Princeton\Algorithm_Course_Princeton\Debug\w5_2_RedBlackTree.exe
+﻿  RedBlackTree.cpp
+D:\Project\vs2010\Algorithm_Course_Princeton\w4_3_RedBlackTree\RedBlackTree.cpp(55,23): error C2440:  “return”: 无法从“std::string”转换为“int”
+D:\Project\vs2010\Algorithm_Course_Princeton\w4_3_RedBlackTree\RedBlackTree.cpp(55,18): message :  没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+D:\Project\vs2010\Algorithm_Course_Princeton\w4_3_RedBlackTree\RedBlackTree.cpp(74,15): error C2440:  “return”: 无法从“std::string”转换为“int”
+D:\Project\vs2010\Algorithm_Course_Princeton\w4_3_RedBlackTree\RedBlackTree.cpp(74,10): message :  没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+D:\Project\vs2010\Algorithm_Course_Princeton\w4_3_RedBlackTree\RedBlackTree.cpp(98,29): error C2440:  “return”: 无法从“std::string”转换为“int”
+D:\Project\vs2010\Algorithm_Course_Princeton\w4_3_RedBlackTree\RedBlackTree.cpp(98,24): message :  没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符

@@ -103,7 +103,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	IsConnect(9, 5);
 	IsConnect(2, 3);
 
-	for (int i = 0; i < vecIndex.size(); i++)
+	for (size_t i = 0; i < vecIndex.size(); i++)
 	{
 		PathCompress(vecIndex[i]);
 	}	
