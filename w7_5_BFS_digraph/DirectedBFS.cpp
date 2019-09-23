@@ -9,21 +9,34 @@ DirectedBFS::DirectedBFS(Digraph& digraph_, int v)
 
 	marked.resize(digraph.GetV(), false);
 	edgeTo.resize(digraph.GetV(), -1);
+	distTo.resize(digraph.GetV(), 0);
 
-	DFS(v);
+	BFS(v);
 }
 
-void DirectedBFS::DFS(int v)
+void DirectedBFS::BFS(int v)
 {
-	marked[v] = true;
 	count++;
 
-	for (int w : digraph.adj(v))
+	queue<int> queueBFS;
+	queueBFS.push(v);
+
+	while (!queueBFS.empty())
 	{
-		if (!marked[w])
+		int vv = queueBFS.front();
+		queueBFS.pop();
+		marked[vv] = true;
+
+		for (int j : digraph.adj(vv))
 		{
-			edgeTo[w] = v;
-			DFS(w);
+			if (!marked[j])
+			{
+				marked[j] = true;
+				edgeTo[j] = vv;
+				distTo[j] = distTo[vv] + 1;
+
+				queueBFS.push(j);
+			}
 		}
 	}
 }
@@ -49,5 +62,10 @@ vector<int> DirectedBFS::pathTo(int v)
 		vecOut.insert(vecOut.begin(), x);
 	}
 	return vecOut;
+}
+
+int DirectedBFS::DistTo(int v)
+{
+	return distTo[v];
 }
 

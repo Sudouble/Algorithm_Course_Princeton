@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w7_4_DFS_digraph", "w7_4_DF
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w7_5_BFS_digraph", "w7_5_BFS_digraph\w7_5_BFS_digraph.vcxproj", "{80551136-79FA-4C51-BD4D-0AD1FA92C20F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w7_6_TopologicalSort", "w7_6_TopologicalSort\w7_6_TopologicalSort.vcxproj", "{FA56D6A6-42DC-426D-A75B-545D48138C76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -225,6 +227,14 @@ Global
 		{80551136-79FA-4C51-BD4D-0AD1FA92C20F}.Release|Win32.Build.0 = Release|Win32
 		{80551136-79FA-4C51-BD4D-0AD1FA92C20F}.Release|x64.ActiveCfg = Release|x64
 		{80551136-79FA-4C51-BD4D-0AD1FA92C20F}.Release|x64.Build.0 = Release|x64
+		{FA56D6A6-42DC-426D-A75B-545D48138C76}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FA56D6A6-42DC-426D-A75B-545D48138C76}.Debug|Win32.Build.0 = Debug|Win32
+		{FA56D6A6-42DC-426D-A75B-545D48138C76}.Debug|x64.ActiveCfg = Debug|x64
+		{FA56D6A6-42DC-426D-A75B-545D48138C76}.Debug|x64.Build.0 = Debug|x64
+		{FA56D6A6-42DC-426D-A75B-545D48138C76}.Release|Win32.ActiveCfg = Release|Win32
+		{FA56D6A6-42DC-426D-A75B-545D48138C76}.Release|Win32.Build.0 = Release|Win32
+		{FA56D6A6-42DC-426D-A75B-545D48138C76}.Release|x64.ActiveCfg = Release|x64
+		{FA56D6A6-42DC-426D-A75B-545D48138C76}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

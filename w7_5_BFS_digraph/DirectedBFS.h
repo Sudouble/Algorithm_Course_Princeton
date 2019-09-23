@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Digraph.h"
+#include <queue>
 
 class DirectedBFS
 {
@@ -10,9 +11,10 @@ public:
 	bool IsMark(int v);
 	int GetCount();
 	vector<int> pathTo(int v);
+	int DistTo(int v);
 
 private:
-	void DFS(int v);	
+	void BFS(int v);	
 
 private:
 	Digraph digraph;
@@ -20,6 +22,7 @@ private:
 
 	vector<int> edgeTo;
 	vector<int> marked;
+	vector<int> distTo;
 	int count;
 };
 
