@@ -1,7 +1,2 @@
 ﻿  RedBlackTree.cpp
-D:\Project\vs2010\Algorithm_Course_Princeton\w4_3_RedBlackTree\RedBlackTree.cpp(55,23): error C2440:  “return”: 无法从“std::string”转换为“int”
-D:\Project\vs2010\Algorithm_Course_Princeton\w4_3_RedBlackTree\RedBlackTree.cpp(55,18): message :  没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
-D:\Project\vs2010\Algorithm_Course_Princeton\w4_3_RedBlackTree\RedBlackTree.cpp(74,15): error C2440:  “return”: 无法从“std::string”转换为“int”
-D:\Project\vs2010\Algorithm_Course_Princeton\w4_3_RedBlackTree\RedBlackTree.cpp(74,10): message :  没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
-D:\Project\vs2010\Algorithm_Course_Princeton\w4_3_RedBlackTree\RedBlackTree.cpp(98,29): error C2440:  “return”: 无法从“std::string”转换为“int”
-D:\Project\vs2010\Algorithm_Course_Princeton\w4_3_RedBlackTree\RedBlackTree.cpp(98,24): message :  没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+  w4_3_RedBlackTree.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w5_2_RedBlackTree.exe

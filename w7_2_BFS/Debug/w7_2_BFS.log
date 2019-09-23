@@ -1,2 +1,9 @@
-﻿  BreadthFirstSearchPath.cpp
-  w7_2_BFS.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w7_2_BFS.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (w7_2_BFS.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  BreadthFirstSearchPath.cpp
+  UndirectedGraph.cpp
+D:\Project\vs2010\Algorithm_Course_Princeton\w7_2_BFS\UndirectedGraph.cpp(33,11): warning C4018:  “>=”: 有符号/无符号不匹配
+  w7_2_BFS.cpp
+D:\Project\vs2010\Algorithm_Course_Princeton\w7_2_BFS\UndirectedGraph.cpp(54,26): warning C4018:  “<”: 有符号/无符号不匹配
+  正在生成代码...
+D:\Project\vs2010\Algorithm_Course_Princeton\w7_2_BFS\w7_2_BFS.cpp(10,20): warning C4018:  “<”: 有符号/无符号不匹配
+  w7_2_BFS.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w7_2_BFS_graph.exe
