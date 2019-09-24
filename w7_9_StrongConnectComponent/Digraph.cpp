@@ -3,8 +3,6 @@
 
 Edge::Edge()
 {
-	start = 0;
-	end = 0;
 }
 
 Edge::~Edge()
@@ -47,6 +45,17 @@ int Digraph::GetE()
 int Digraph::GetV()
 {
 	return vecAdj.size();
+}
+
+Digraph Digraph::reverse()
+{
+	Digraph graph_(GetV());
+	for (size_t v = 0; v < GetV(); v++)
+	{
+		for (int w : this->adj(v))
+			graph_.addEdge(Edge(w, v));
+	}
+	return graph_;
 }
 
 void Digraph::CheckValidate(int v)
