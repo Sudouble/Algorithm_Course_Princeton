@@ -1,5 +1,0 @@
-﻿  stdafx.cpp
-  w3_4_shuffling.cpp
-D:\Project\vs2010\Algorithm_Course_Princeton\w3_4_shuffling\w3_4_shuffling.cpp(23,20): warning C4018:  “<”: 有符号/无符号不匹配
-  LINK : 没有找到 D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w3_4_shuffling.exe 或上一个增量链接没有生成它；正在执行完全链接
-  w3_4_shuffling.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w3_4_shuffling.exe

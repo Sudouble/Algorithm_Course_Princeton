@@ -1,7 +1,0 @@
-﻿  stdafx.cpp
-  w3_8_quick_selection.cpp
-D:\Project\vs2010\Algorithm_Course_Princeton\w3_8_quick_selection\w3_8_quick_selection.cpp(23,20): warning C4018:  “<”: 有符号/无符号不匹配
-D:\Project\vs2010\Algorithm_Course_Princeton\w3_8_quick_selection\w3_8_quick_selection.cpp(41,20): warning C4018:  “<”: 有符号/无符号不匹配
-D:\Project\vs2010\Algorithm_Course_Princeton\w3_8_quick_selection\w3_8_quick_selection.cpp(49,11): warning C4018:  “<”: 有符号/无符号不匹配
-D:\Project\vs2010\Algorithm_Course_Princeton\w3_8_quick_selection\w3_8_quick_selection.cpp(53,16): warning C4018:  “>=”: 有符号/无符号不匹配
-  w3_8_quick_selection.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w3_8_quick_selection.exe

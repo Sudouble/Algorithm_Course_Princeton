@@ -1,6 +1,0 @@
-﻿  stdafx.cpp
-  w3_7_QuickSort.cpp
-D:\Project\vs2010\Algorithm_Course_Princeton\w3_7_QuickSort\w3_7_QuickSort.cpp(23,20): warning C4018:  “<”: 有符号/无符号不匹配
-D:\Project\vs2010\Algorithm_Course_Princeton\w3_7_QuickSort\w3_7_QuickSort.cpp(38,20): warning C4018:  “<”: 有符号/无符号不匹配
-D:\Project\vs2010\Algorithm_Course_Princeton\w3_7_QuickSort\w3_7_QuickSort.cpp(57,20): warning C4018:  “<”: 有符号/无符号不匹配
-  w3_7_QuickSort.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w3_7_QuickSort.exe

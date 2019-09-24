@@ -1,7 +1,0 @@
-﻿  stdafx.cpp
-  Stack_Array.cpp
-  Stack_Linklist.cpp
-  w2_1_stacks.cpp
-  正在生成代码...
-  LINK : 没有找到 D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w2_1_stacks.exe 或上一个增量链接没有生成它；正在执行完全链接
-  w2_1_stacks.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w2_1_stacks.exe

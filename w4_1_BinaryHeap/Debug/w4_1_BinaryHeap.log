@@ -1,8 +1,0 @@
-﻿  stdafx.cpp
-  BinaryHeap.cpp
-D:\Project\vs2010\Algorithm_Course_Princeton\w4_1_BinaryHeap\BinaryHeap.cpp(62,17): warning C4018:  “<”: 有符号/无符号不匹配
-  w4_1_BinaryHeap.cpp
-D:\Project\vs2010\Algorithm_Course_Princeton\w4_1_BinaryHeap\BinaryHeap.cpp(65,13): warning C4018:  “<”: 有符号/无符号不匹配
-  正在生成代码...
-D:\Project\vs2010\Algorithm_Course_Princeton\w4_1_BinaryHeap\w4_1_BinaryHeap.cpp(9,20): warning C4018:  “<”: 有符号/无符号不匹配
-  w4_1_BinaryHeap.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w4_1_BinaryHeap.exe

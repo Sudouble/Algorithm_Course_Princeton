@@ -1,5 +1,0 @@
-﻿  stdafx.cpp
-  w2_3_Dijkstra_two_stack_algo.cpp
-D:\Project\vs2010\Algorithm_Course_Princeton\w2_3_Dijkstra_two_stack_algo\w2_3_Dijkstra_two_stack_algo.cpp(17,20): warning C4018:  “<”: 有符号/无符号不匹配
-  LINK : 没有找到 D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w2_3_Dijkstra_two_stack_algo.exe 或上一个增量链接没有生成它；正在执行完全链接
-  w2_3_Dijkstra_two_stack_algo.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w2_3_Dijkstra_two_stack_algo.exe
