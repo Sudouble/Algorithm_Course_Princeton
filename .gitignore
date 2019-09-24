@@ -1,5 +1,6 @@
 *.sdf
 .vs
+ipch
 # Prerequisites
 *.opendb
 *.d
