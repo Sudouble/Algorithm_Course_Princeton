@@ -151,7 +151,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="PrimEager.cpp" />
     <ClCompile Include="w8_2_Prim_EagerImp.cpp" />
+    <ClCompile Include="WeightedEdge.cpp" />
+    <ClCompile Include="WeightedEdgeGraph.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PrimEager.h" />
+    <ClInclude Include="WeightedEdge.h" />
+    <ClInclude Include="WeightedEdgeGraph.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

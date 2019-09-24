@@ -18,5 +18,25 @@
     <ClCompile Include="w8_2_Prim_EagerImp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="WeightedEdge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WeightedEdgeGraph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimEager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WeightedEdge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WeightedEdgeGraph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimEager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
