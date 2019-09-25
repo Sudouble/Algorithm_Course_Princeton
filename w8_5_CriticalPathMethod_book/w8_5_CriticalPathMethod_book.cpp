@@ -14,7 +14,7 @@ int main()
 
 	int i = 0;
 	G.addEdge(WeightedEdge(source, i, 0.0));
-	G.addEdge(WeightedEdge(i+n,	   0, 0.0));
+	G.addEdge(WeightedEdge(i+n,	   sink, 0.0));
 	G.addEdge(WeightedEdge(i,      i+n, 41.0));
 	// constrains
 	G.addEdge(WeightedEdge(i + n, 1, 0.0));
@@ -23,34 +23,34 @@ int main()
 
 	i = 1;
 	G.addEdge(WeightedEdge(source, i, 0.0));
-	G.addEdge(WeightedEdge(i + n, 0, 0.0));
+	G.addEdge(WeightedEdge(i + n, sink, 0.0));
 	G.addEdge(WeightedEdge(i, i + n, 51.0));
 	// constrains
 	G.addEdge(WeightedEdge(i + n, 2, 0.0));	
 
 	i = 2;
 	G.addEdge(WeightedEdge(source, i, 0.0));
-	G.addEdge(WeightedEdge(i + n, 0, 0.0));
+	G.addEdge(WeightedEdge(i + n, sink, 0.0));
 	G.addEdge(WeightedEdge(i, i + n, 50.0));
 
 	i = 3;
 	G.addEdge(WeightedEdge(source, i, 0.0));
-	G.addEdge(WeightedEdge(i + n, 0, 0.0));
+	G.addEdge(WeightedEdge(i + n, sink, 0.0));
 	G.addEdge(WeightedEdge(i, i + n, 36.0));
 
 	i = 4;
 	G.addEdge(WeightedEdge(source, i, 0.0));
-	G.addEdge(WeightedEdge(i + n, 0, 0.0));
+	G.addEdge(WeightedEdge(i + n, sink, 0.0));
 	G.addEdge(WeightedEdge(i, i + n, 38.0));
 
 	i = 5;
 	G.addEdge(WeightedEdge(source, i, 0.0));
-	G.addEdge(WeightedEdge(i + n, 0, 0.0));
+	G.addEdge(WeightedEdge(i + n, sink, 0.0));
 	G.addEdge(WeightedEdge(i, i + n, 45.0));
 
 	i = 6;
 	G.addEdge(WeightedEdge(source, i, 0.0));
-	G.addEdge(WeightedEdge(i + n, 0, 0.0));
+	G.addEdge(WeightedEdge(i + n, sink, 0.0));
 	G.addEdge(WeightedEdge(i, i + n, 21.0));
 	// constrains
 	G.addEdge(WeightedEdge(i + n, 3, 0.0));
@@ -58,7 +58,7 @@ int main()
 
 	i = 7;
 	G.addEdge(WeightedEdge(source, i, 0.0));
-	G.addEdge(WeightedEdge(i + n, 0, 0.0));
+	G.addEdge(WeightedEdge(i + n, sink, 0.0));
 	G.addEdge(WeightedEdge(i, i + n, 32.0));
 	// constrains
 	G.addEdge(WeightedEdge(i + n, 3, 0.0));
@@ -66,14 +66,14 @@ int main()
 
 	i = 8;
 	G.addEdge(WeightedEdge(source, i, 0.0));
-	G.addEdge(WeightedEdge(i + n, 0, 0.0));
+	G.addEdge(WeightedEdge(i + n, sink, 0.0));
 	G.addEdge(WeightedEdge(i, i + n, 21.0));
 	// constrains
 	G.addEdge(WeightedEdge(i + n, 2, 0.0));
 
 	i = 9;
 	G.addEdge(WeightedEdge(source, i, 0.0));
-	G.addEdge(WeightedEdge(i + n, 0, 0.0));
+	G.addEdge(WeightedEdge(i + n, sink, 0.0));
 	G.addEdge(WeightedEdge(i, i + n, 29.0));
 	// constrains
 	G.addEdge(WeightedEdge(i + n, 4, 0.0));

@@ -4,7 +4,7 @@
 
 AcyclicLongestPath::AcyclicLongestPath(WeightedEdgeDigraph& graph, int s)
 {
-	distTo.resize(graph.GetV(), numeric_limits<double>::min());
+	distTo.resize(graph.GetV(), -numeric_limits<double>::min());
 	edgeTo.resize(graph.GetV(), -1);
 
 	distTo[s] = 0.0;
@@ -30,7 +30,7 @@ void AcyclicLongestPath::relax(WeightedEdge e)
 {
 	int v = e.from();
 	int w = e.to();
-	if (distTo[w] > distTo[v] + e.Weight())
+	if (distTo[w] < distTo[v] + e.Weight())
 	{
 		distTo[w] = distTo[v] + e.Weight();
 		edgeTo[w] = v;
