@@ -67,6 +67,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w8_2_Prim_EagerImp", "w8_2_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w8_3_Kruskal", "w8_3_Kruskal\w8_3_Kruskal.vcxproj", "{69C9B294-BAA9-443E-A068-6778FE48E457}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w8_4_Dijkstra_ShortestPath", "w8_4_Dijkstra_ShortestPath\w8_4_Dijkstra_ShortestPath.vcxproj", "{5F1F0F32-463C-44D4-BE01-9DE30C092EF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -295,6 +297,14 @@ Global
 		{69C9B294-BAA9-443E-A068-6778FE48E457}.Release|Win32.Build.0 = Release|Win32
 		{69C9B294-BAA9-443E-A068-6778FE48E457}.Release|x64.ActiveCfg = Release|x64
 		{69C9B294-BAA9-443E-A068-6778FE48E457}.Release|x64.Build.0 = Release|x64
+		{5F1F0F32-463C-44D4-BE01-9DE30C092EF6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5F1F0F32-463C-44D4-BE01-9DE30C092EF6}.Debug|Win32.Build.0 = Debug|Win32
+		{5F1F0F32-463C-44D4-BE01-9DE30C092EF6}.Debug|x64.ActiveCfg = Debug|x64
+		{5F1F0F32-463C-44D4-BE01-9DE30C092EF6}.Debug|x64.Build.0 = Debug|x64
+		{5F1F0F32-463C-44D4-BE01-9DE30C092EF6}.Release|Win32.ActiveCfg = Release|Win32
+		{5F1F0F32-463C-44D4-BE01-9DE30C092EF6}.Release|Win32.Build.0 = Release|Win32
+		{5F1F0F32-463C-44D4-BE01-9DE30C092EF6}.Release|x64.ActiveCfg = Release|x64
+		{5F1F0F32-463C-44D4-BE01-9DE30C092EF6}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
