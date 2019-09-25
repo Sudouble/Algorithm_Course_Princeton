@@ -1,10 +1,8 @@
-﻿// w8_2_Prim_EagerImp.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+﻿// w8_3_Kruskal.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 
 #include <iostream>
-#include "PrimEager.h"
-
-// Prim 即使实现：找到离已有的最小生成树最小距离的节点，在遍历的同时，跳过已经在树中的节点
+#include "Kruskal.h"
 
 int main()
 {
@@ -27,7 +25,6 @@ int main()
 	graph.addEdge(WeightedEdge(6, 0, 0.58));
 	graph.addEdge(WeightedEdge(6, 4, 0.93));
 
-	PrimEager prim(graph);
-
-	prim.Print();
+	Kruskal kruskal(graph);
+	kruskal.Print();
 }
