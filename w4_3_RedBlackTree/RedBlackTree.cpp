@@ -187,7 +187,7 @@ int RedBlackTree::rank(string key, Node* x)
 
 void RedBlackTree::deleteMin()
 {
-	root = deleteMin(root);0
+	root = deleteMin(root);
 }
 
 Node* RedBlackTree::deleteMin(Node* x)

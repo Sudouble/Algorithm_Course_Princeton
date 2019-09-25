@@ -1,2 +1,7 @@
-﻿  w7_3_ConnectedComponents.cpp
+﻿  CC.cpp
+  UndirectedGraph.cpp
+D:\Project\vs2010\Algorithm_Course_Princeton\w7_3_ConnectedComponents\UndirectedGraph.cpp(33,11): warning C4018:  “>=”: 有符号/无符号不匹配
+  w7_3_ConnectedComponents.cpp
+  正在生成代码...
+D:\Project\vs2010\Algorithm_Course_Princeton\w7_3_ConnectedComponents\UndirectedGraph.cpp(54,26): warning C4018:  “<”: 有符号/无符号不匹配
   w7_3_ConnectedComponents.vcxproj -> D:\Project\vs2010\Algorithm_Course_Princeton\Debug\w7_3_ConnectedComponents.exe
