@@ -71,6 +71,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w8_4_Dijkstra_ShortestPath"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w8_5_CriticalPathMethod_book", "w8_5_CriticalPathMethod_book\w8_5_CriticalPathMethod_book.vcxproj", "{6C29D3F7-2B71-47A2-B842-36720A47CEC6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w8_6_BellmanFord_NoQueue", "w8_6_BellmanFord_NoQueue\w8_6_BellmanFord_NoQueue.vcxproj", "{95963745-D3B9-43B3-9D46-A194BD31C087}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -315,6 +317,14 @@ Global
 		{6C29D3F7-2B71-47A2-B842-36720A47CEC6}.Release|Win32.Build.0 = Release|Win32
 		{6C29D3F7-2B71-47A2-B842-36720A47CEC6}.Release|x64.ActiveCfg = Release|x64
 		{6C29D3F7-2B71-47A2-B842-36720A47CEC6}.Release|x64.Build.0 = Release|x64
+		{95963745-D3B9-43B3-9D46-A194BD31C087}.Debug|Win32.ActiveCfg = Debug|Win32
+		{95963745-D3B9-43B3-9D46-A194BD31C087}.Debug|Win32.Build.0 = Debug|Win32
+		{95963745-D3B9-43B3-9D46-A194BD31C087}.Debug|x64.ActiveCfg = Debug|x64
+		{95963745-D3B9-43B3-9D46-A194BD31C087}.Debug|x64.Build.0 = Debug|x64
+		{95963745-D3B9-43B3-9D46-A194BD31C087}.Release|Win32.ActiveCfg = Release|Win32
+		{95963745-D3B9-43B3-9D46-A194BD31C087}.Release|Win32.Build.0 = Release|Win32
+		{95963745-D3B9-43B3-9D46-A194BD31C087}.Release|x64.ActiveCfg = Release|x64
+		{95963745-D3B9-43B3-9D46-A194BD31C087}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

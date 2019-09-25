@@ -16,6 +16,7 @@ public:
 
 	vector<WeightedEdge> adj(int v);
 	void addEdge(WeightedEdge edge);
+	vector<WeightedEdge> edges();
 	
 	void CheckValidate(int v);
 
@@ -24,5 +25,6 @@ private:
 	int E;
 
 	vector<vector<WeightedEdge> > vecAdj;
+	vector<WeightedEdge> vecEdges;
 };
 

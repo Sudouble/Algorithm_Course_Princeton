@@ -34,7 +34,12 @@ void WeightedEdgeDigraph::addEdge(WeightedEdge edge)
 	E++;
 
 	vecAdj[v].push_back(edge);
-	vecAdj[w].push_back(edge);
+	vecEdges.push_back(edge);
+}
+
+vector<WeightedEdge> WeightedEdgeDigraph::edges()
+{
+	return vecEdges;
 }
 
 void WeightedEdgeDigraph::CheckValidate(int v)
