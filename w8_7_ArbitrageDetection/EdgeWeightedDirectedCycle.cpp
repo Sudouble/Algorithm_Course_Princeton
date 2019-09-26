@@ -41,6 +41,8 @@ void EdgeWeightedDirectedCycle::dfs(WeightedEdgeDigraph& g, int v)
 			return;
 		}
 	}
+
+	onStack[v] = false;
 }
 
 bool EdgeWeightedDirectedCycle::hasCycle()

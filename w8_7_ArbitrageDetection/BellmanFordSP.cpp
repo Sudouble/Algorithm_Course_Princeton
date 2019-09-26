@@ -27,9 +27,10 @@ void BellmanFordSP::relax(WeightedEdgeDigraph& g, int v)
 	for (auto e : g.adj(v))
 	{
 		int w = e.other(v);
-		if (distTo[w] > distTo[v] + e.Weight())
+		double newValue = distTo[v] + e.Weight() + 0.002;
+		if (distTo[w] > (newValue))
 		{
-			distTo[w] = distTo[v] + e.Weight();
+			distTo[w] = newValue - 0.002;
 			edgeTo[w] = e;
 
 			if (!onQueue[w]) {
@@ -70,6 +71,18 @@ void BellmanFordSP::findNegtiveCycle()
 	}
 	EdgeWeightedDirectedCycle finder(spt);
 	cycle = finder.Cycle();
+
+	double stake = 1000.0;
+	vector<WeightedEdge> result = cycle;
+	for (int i = result.size() - 1; i >= 0; i--)
+	{
+		int v = result[i].either();
+		int w = result[i].other(v);
+		cout << stake << " " << v;
+		stake *= exp(-result[i].Weight());
+		cout << " = " << stake << " " << w << endl;		
+	}
+	cout << "-----------------------------------" << endl;
 }
 
 vector<WeightedEdge> BellmanFordSP::NegtiveCycle()

@@ -18,35 +18,35 @@ int main()
 	mapName2ID["CAD"] = 4;
 
 	WeightedEdgeDigraph g(5);
-	g.addEdge(WeightedEdge(mapName2ID["USD"], mapName2ID["USD"], -log10(1.0)));
-	g.addEdge(WeightedEdge(mapName2ID["USD"], mapName2ID["EUR"], -log10(0.741)));
-	g.addEdge(WeightedEdge(mapName2ID["USD"], mapName2ID["GBP"], -log10(0.657)));
-	g.addEdge(WeightedEdge(mapName2ID["USD"], mapName2ID["CHF"], -log10(1.061)));
-	g.addEdge(WeightedEdge(mapName2ID["USD"], mapName2ID["CAD"], -log10(1.005)));
+	g.addEdge(WeightedEdge(mapName2ID["USD"], mapName2ID["USD"], -int(log(1.0)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["USD"], mapName2ID["EUR"], -int(log(0.741)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["USD"], mapName2ID["GBP"], -int(log(0.657)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["USD"], mapName2ID["CHF"], -int(log(1.061)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["USD"], mapName2ID["CAD"], -int(log(1.005)*1000)/1000.0));
 
-	g.addEdge(WeightedEdge(mapName2ID["EUR"], mapName2ID["USD"], -log10(1.349)));
-	g.addEdge(WeightedEdge(mapName2ID["EUR"], mapName2ID["EUR"], -log10(1.0)));
-	g.addEdge(WeightedEdge(mapName2ID["EUR"], mapName2ID["GBP"], -log10(0.888)));
-	g.addEdge(WeightedEdge(mapName2ID["EUR"], mapName2ID["CHF"], -log10(1.433)));
-	g.addEdge(WeightedEdge(mapName2ID["EUR"], mapName2ID["CAD"], -log10(1.366)));
+	g.addEdge(WeightedEdge(mapName2ID["EUR"], mapName2ID["USD"], -int(log(1.349)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["EUR"], mapName2ID["EUR"], -int(log(1.0)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["EUR"], mapName2ID["GBP"], -int(log(0.888)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["EUR"], mapName2ID["CHF"], -int(log(1.433)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["EUR"], mapName2ID["CAD"], -int(log(1.366)*1000)/1000.0));
 
-	g.addEdge(WeightedEdge(mapName2ID["GBP"], mapName2ID["USD"], -log10(1.521)));
-	g.addEdge(WeightedEdge(mapName2ID["GBP"], mapName2ID["EUR"], -log10(1.126)));
-	g.addEdge(WeightedEdge(mapName2ID["GBP"], mapName2ID["GBP"], -log10(1.0)));
-	g.addEdge(WeightedEdge(mapName2ID["GBP"], mapName2ID["CHF"], -log10(1.614)));
-	g.addEdge(WeightedEdge(mapName2ID["GBP"], mapName2ID["CAD"], -log10(1.538)));
+	g.addEdge(WeightedEdge(mapName2ID["GBP"], mapName2ID["USD"], -int(log(1.521)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["GBP"], mapName2ID["EUR"], -int(log(1.126)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["GBP"], mapName2ID["GBP"], -int(log(1.0)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["GBP"], mapName2ID["CHF"], -int(log(1.614)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["GBP"], mapName2ID["CAD"], -int(log(1.538)*1000)/1000.0));
 
-	g.addEdge(WeightedEdge(mapName2ID["CHF"], mapName2ID["USD"], -log10(0.942)));
-	g.addEdge(WeightedEdge(mapName2ID["CHF"], mapName2ID["EUR"], -log10(0.698)));
-	g.addEdge(WeightedEdge(mapName2ID["CHF"], mapName2ID["GBP"], -log10(0.619)));
-	g.addEdge(WeightedEdge(mapName2ID["CHF"], mapName2ID["CHF"], -log10(1.0)));
-	g.addEdge(WeightedEdge(mapName2ID["CHF"], mapName2ID["CAD"], -log10(0.953)));
+	g.addEdge(WeightedEdge(mapName2ID["CHF"], mapName2ID["USD"], -int(log(0.942)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["CHF"], mapName2ID["EUR"], -int(log(0.698)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["CHF"], mapName2ID["GBP"], -int(log(0.619)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["CHF"], mapName2ID["CHF"], -int(log(1.0)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["CHF"], mapName2ID["CAD"], -int(log(0.953)*1000)/1000.0));
 
-	g.addEdge(WeightedEdge(mapName2ID["CAD"], mapName2ID["USD"], -log10(0.995)));
-	g.addEdge(WeightedEdge(mapName2ID["CAD"], mapName2ID["EUR"], -log10(0.732)));
-	g.addEdge(WeightedEdge(mapName2ID["CAD"], mapName2ID["GBP"], -log10(0.650)));
-	g.addEdge(WeightedEdge(mapName2ID["CAD"], mapName2ID["CHF"], -log10(1.049)));
-	g.addEdge(WeightedEdge(mapName2ID["CAD"], mapName2ID["CAD"], -log10(1.0)));
+	g.addEdge(WeightedEdge(mapName2ID["CAD"], mapName2ID["USD"], -int(log(0.995)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["CAD"], mapName2ID["EUR"], -int(log(0.732)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["CAD"], mapName2ID["GBP"], -int(log(0.650)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["CAD"], mapName2ID["CHF"], -int(log(1.049)*1000)/1000.0));
+	g.addEdge(WeightedEdge(mapName2ID["CAD"], mapName2ID["CAD"], -int(log(1.0)*1000)/1000.0));
 
 	ArbitrageDetection ad(g, 0);
 }

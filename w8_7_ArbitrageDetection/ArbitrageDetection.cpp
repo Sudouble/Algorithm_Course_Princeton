@@ -15,7 +15,7 @@ ArbitrageDetection::ArbitrageDetection(WeightedEdgeDigraph& g, int s)
 			int v = result[i].either();
 			int w = result[i].other(v);
 			cout << stake << " " << v;
-			stake *= pow(-result[i].Weight(), 10.0);
+			stake *= exp(-result[i].Weight());
 			cout << " = " << stake << " " << w << endl;
 		}
 	}
