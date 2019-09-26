@@ -12,7 +12,7 @@ BellmanFordSP::BellmanFordSP(WeightedEdgeDigraph& g, int s)
 	distTo[s] = 0.0;
 	queueQ.push(s);
 	onQueue[s] = true;
-	while (!queueQ.empty())
+	while (!queueQ.empty() && !HasNegativeCycle())
 	{
 		int ww = queueQ.front();
 		queueQ.pop();
