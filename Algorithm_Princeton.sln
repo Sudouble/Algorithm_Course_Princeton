@@ -73,9 +73,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w8_5_CriticalPathMethod_boo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w8_6_BellmanFord_NoQueue", "w8_6_BellmanFord_NoQueue\w8_6_BellmanFord_NoQueue.vcxproj", "{95963745-D3B9-43B3-9D46-A194BD31C087}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w8_7_ArbitrageDetection", "w8_7_ArbitrageDetection\w8_7_ArbitrageDetection.vcxproj", "{DA39334A-8454-4903-888D-24B34C0139E6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w8_7_ArbitrageDetection_book", "w8_7_ArbitrageDetection\w8_7_ArbitrageDetection.vcxproj", "{DA39334A-8454-4903-888D-24B34C0139E6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w8_8_BellmanFord_Queue", "w8_8_BellmanFord_Queue\w8_8_BellmanFord_Queue.vcxproj", "{00157A96-5561-4F4E-BA0A-2CB9460328DD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w9_1_FordFulkerso", "w9_1_FordFulkerso\w9_1_FordFulkerso.vcxproj", "{CE672DAD-A76F-4916-8FEB-451099D9737E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -345,6 +347,14 @@ Global
 		{00157A96-5561-4F4E-BA0A-2CB9460328DD}.Release|Win32.Build.0 = Release|Win32
 		{00157A96-5561-4F4E-BA0A-2CB9460328DD}.Release|x64.ActiveCfg = Release|x64
 		{00157A96-5561-4F4E-BA0A-2CB9460328DD}.Release|x64.Build.0 = Release|x64
+		{CE672DAD-A76F-4916-8FEB-451099D9737E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE672DAD-A76F-4916-8FEB-451099D9737E}.Debug|Win32.Build.0 = Debug|Win32
+		{CE672DAD-A76F-4916-8FEB-451099D9737E}.Debug|x64.ActiveCfg = Debug|x64
+		{CE672DAD-A76F-4916-8FEB-451099D9737E}.Debug|x64.Build.0 = Debug|x64
+		{CE672DAD-A76F-4916-8FEB-451099D9737E}.Release|Win32.ActiveCfg = Release|Win32
+		{CE672DAD-A76F-4916-8FEB-451099D9737E}.Release|Win32.Build.0 = Release|Win32
+		{CE672DAD-A76F-4916-8FEB-451099D9737E}.Release|x64.ActiveCfg = Release|x64
+		{CE672DAD-A76F-4916-8FEB-451099D9737E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
