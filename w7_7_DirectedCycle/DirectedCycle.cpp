@@ -24,6 +24,7 @@ void DirectedCycle::DFS(int v)
 		}
 		else
 		{
+			// 需要能回溯的，这里只记录了是否有Cycle
 			inStack.push(w);
 		}
 	}
