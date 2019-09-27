@@ -43,9 +43,9 @@ void FlowEdge::addResidualFlowTo(int vertex, double amount)
 int FlowEdge::other(int vertex)
 {	
 	if (vertex == v)
-		return v;
-	else if (vertex == w)
 		return w;
+	else if (vertex == w)
+		return v;
 	else
 		throw ("invalid endpoint");
 }

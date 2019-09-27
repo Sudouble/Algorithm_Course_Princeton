@@ -20,7 +20,7 @@ private:
 	double FLOATING_POINT_SPSILON = 1E-11;
 	int V;
 	vector<bool> marked;
-	vector<FlowEdge> edgeTo;
+	vector<FlowEdge*> edgeTo;
 	double value;
 };
 

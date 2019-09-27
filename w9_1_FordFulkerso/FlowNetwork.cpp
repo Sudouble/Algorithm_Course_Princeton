@@ -18,10 +18,10 @@ int FlowNetwork::GetE()
 	return E;
 }
 
-void FlowNetwork::addEdge(FlowEdge edge)
+void FlowNetwork::addEdge(FlowEdge *edge)
 {
-	int v = edge.from();
-	int w = edge.to();
+	int v = edge->from();
+	int w = edge->to();
 	if (v < 0 || v >= V)
 		throw "Invalid Input";
 	if (w < 0 || w >= V)
@@ -35,7 +35,7 @@ void FlowNetwork::addEdge(FlowEdge edge)
 	E++;
 }
 
-vector<FlowEdge> FlowNetwork::adj(int v)
+vector<FlowEdge*> FlowNetwork::adj(int v)
 {
 	if (v < 0 || v >= V)
 		throw "Invalid Input";
@@ -43,7 +43,7 @@ vector<FlowEdge> FlowNetwork::adj(int v)
 	return vecAdj[v];
 }
 
-vector<FlowEdge> FlowNetwork::edges()
+vector<FlowEdge*> FlowNetwork::edges()
 {
 	return vecEdge;
 }

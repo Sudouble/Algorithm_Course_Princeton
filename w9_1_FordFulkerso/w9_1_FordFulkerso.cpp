@@ -7,14 +7,14 @@
 int main()
 {
 	FlowNetwork g(6);
-	g.addEdge(FlowEdge(0, 1, 2.0));
-	g.addEdge(FlowEdge(0, 2, 3.0));
-	g.addEdge(FlowEdge(1, 3, 3.0));
-	g.addEdge(FlowEdge(1, 4, 1.0));
-	g.addEdge(FlowEdge(2, 3, 1.0));
-	g.addEdge(FlowEdge(2, 4, 1.0));
-	g.addEdge(FlowEdge(3, 5, 2.0));
-	g.addEdge(FlowEdge(4, 5, 3.0));
+	g.addEdge(new FlowEdge(0, 1, 2.0));
+	g.addEdge(new FlowEdge(0, 2, 3.0));
+	g.addEdge(new FlowEdge(1, 3, 3.0));
+	g.addEdge(new FlowEdge(1, 4, 1.0));
+	g.addEdge(new FlowEdge(2, 3, 1.0));
+	g.addEdge(new FlowEdge(2, 4, 1.0));
+	g.addEdge(new FlowEdge(3, 5, 2.0));
+	g.addEdge(new FlowEdge(4, 5, 3.0));
 
 	cout << g.toString() << endl;
 
@@ -24,10 +24,10 @@ int main()
 	cout << "Max flow from " << s << " to " << t << endl;
 	for (int v = 0; v < g.GetV(); v++)
 	{
-		for (FlowEdge e : g.adj(v))
+		for (FlowEdge *e : g.adj(v))
 		{
-			if (v == e.from() && e.Flow() > 0)
-				cout << "  " << e.toString() << endl;
+			if (v == e->from() && e->Flow() > 0)
+				cout << "  " << e->toString() << endl;
 		}		
 	}
 

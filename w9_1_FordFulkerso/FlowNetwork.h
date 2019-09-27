@@ -10,15 +10,15 @@ public:
 	int GetV();
 	int GetE();
 
-	void addEdge(FlowEdge edge);
-	vector<FlowEdge> adj(int v);
-	vector<FlowEdge> edges();
+	void addEdge(FlowEdge* edge);
+	vector<FlowEdge*> adj(int v);
+	vector<FlowEdge*> edges();
 	string toString();
 
 private:
 	int V;
 	int E;
-	vector<vector<FlowEdge> > vecAdj;
-	vector<FlowEdge> vecEdge;
+	vector<vector<FlowEdge*> > vecAdj;
+	vector<FlowEdge*> vecEdge;
 };
 

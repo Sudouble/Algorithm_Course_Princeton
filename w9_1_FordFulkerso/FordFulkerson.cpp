@@ -18,15 +18,15 @@ FordFulkerson::FordFulkerson(FlowNetwork& g, int s, int t)
 	{
 		// bottleneck capacity
 		double bottle = numeric_limits<double>::max();
-		for (int v = t; v != s; v = edgeTo[v].other(v))
+		for (int v = t; v != s; v = edgeTo[v]->other(v))
 		{
-			bottle = std::fmin(bottle, edgeTo[v].CapacityTo(v));
+			bottle = std::fmin(bottle, edgeTo[v]->CapacityTo(v));
 		}
 
 		// augment flow
-		for (size_t v = t; v != s; v = edgeTo[v].other(v))
+		for (size_t v = t; v != s; v = edgeTo[v]->other(v))
 		{
-			edgeTo[v].addResidualFlowTo(v, bottle);
+			edgeTo[v]->addResidualFlowTo(v, bottle);
 		}
 
 		value += bottle;
@@ -70,18 +70,18 @@ bool FordFulkerson::hasAugmentingPath(FlowNetwork& g, int s, int t)
 		int v = queueIn.front();
 		queueIn.pop();
 
-		for (FlowEdge e : g.adj(v))
+		for (FlowEdge *e : g.adj(v))
 		{
-			int w = e.other(v);
+			int w = e->other(v);
 			
 			// if residual capacity from v to w
-			if (e.CapacityTo(w) > 0)
+			if (e->CapacityTo(w) > 0)
 			{
 				if (!marked[w])
 				{
 					marked[w] = true;
 
-					edgeTo[w] = e;		
+					edgeTo[w] = e;
 					queueIn.push(w);
 				}
 			}
@@ -96,10 +96,10 @@ double FordFulkerson::excess(FlowNetwork& g, int v)
 	double excess = 0.0;
 	for (auto e : g.adj(v))
 	{
-		if (v == e.from())
-			excess -= e.Flow();
+		if (v == e->from())
+			excess -= e->Flow();
 		else
-			excess += e.Flow();
+			excess += e->Flow();
 	}
 	return excess;
 }
@@ -110,10 +110,10 @@ bool FordFulkerson::isFeasible(FlowNetwork& g, int s, int t)
 	{
 		for (auto e : g.adj(v))
 		{
-			if (e.Flow() < -FLOATING_POINT_SPSILON
-				|| e.Flow() > e.Capacity() + FLOATING_POINT_SPSILON)
+			if (e->Flow() < -FLOATING_POINT_SPSILON
+				|| e->Flow() > e->Capacity() + FLOATING_POINT_SPSILON)
 			{
-				cout << "Edge does not satisfy capacity constraints: " << e.toString() << endl;
+				cout << "Edge does not satisfy capacity constraints: " << e->toString() << endl;
 				return false;
 			}
 		}
@@ -171,10 +171,10 @@ bool FordFulkerson::check(FlowNetwork& g, int s, int t)
 	{
 		for (auto e : g.adj(v))
 		{
-			if (v == e.from()
-				&& inCut(e.from())
-				&& !inCut(e.to()))
-				mincutValue += e.Capacity();
+			if (v == e->from()
+				&& inCut(e->from())
+				&& !inCut(e->to()))
+				mincutValue += e->Capacity();
 		}
 	}
 
