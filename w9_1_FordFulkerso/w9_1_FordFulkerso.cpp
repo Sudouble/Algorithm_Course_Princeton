@@ -2,19 +2,42 @@
 //
 
 #include <iostream>
+#include "FordFulkerson.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	FlowNetwork g(6);
+	g.addEdge(FlowEdge(0, 1, 2.0));
+	g.addEdge(FlowEdge(0, 2, 3.0));
+	g.addEdge(FlowEdge(1, 3, 3.0));
+	g.addEdge(FlowEdge(1, 4, 1.0));
+	g.addEdge(FlowEdge(2, 3, 1.0));
+	g.addEdge(FlowEdge(2, 4, 1.0));
+	g.addEdge(FlowEdge(3, 5, 2.0));
+	g.addEdge(FlowEdge(4, 5, 3.0));
+
+	cout << g.toString() << endl;
+
+	int s = 0, t = 5;
+	FordFulkerson ff(g, s, t);
+	
+	cout << "Max flow from " << s << " to " << t << endl;
+	for (int v = 0; v < g.GetV(); v++)
+	{
+		for (FlowEdge e : g.adj(v))
+		{
+			if (v == e.from() && e.Flow() > 0)
+				cout << "  " << e.toString() << endl;
+		}		
+	}
+
+	// print min-cut
+	cout << "Min cut:" << endl;
+	for (int v = 0; v < g.GetV(); v++)
+	{
+		if (ff.inCut(v))
+			cout << v << " ";
+	}
+	cout << endl;
+	cout << "Max flow value = " << ff.Value() << endl;
 }
-
-// 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
-// 调试程序: F5 或调试 >“开始调试”菜单
-
-// 入门使用技巧: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件

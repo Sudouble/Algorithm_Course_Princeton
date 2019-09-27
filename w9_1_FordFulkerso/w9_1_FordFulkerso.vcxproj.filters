@@ -18,5 +18,25 @@
     <ClCompile Include="w9_1_FordFulkerso.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="FlowEdge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlowNetwork.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FordFulkerson.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FlowEdge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlowNetwork.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FordFulkerson.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
