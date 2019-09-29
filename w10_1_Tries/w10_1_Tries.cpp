@@ -17,12 +17,25 @@ int main()
 
 	cout << "Contain: by ? " << tries.Contains("by") << endl;
 	cout << "Contain: bys ? " << tries.Contains("bys") << endl;
+	cout << "tries size:" << tries.size() << endl;
 
 	tries.Delete("by");
 	tries.Delete("bys");
 	cout << "After Delete" << endl;
 	cout << "Contain: by ? " << tries.Contains("by") << endl;
 	cout << "Contain: bys ? " << tries.Contains("bys") << endl;
+	cout << "tries size:" << tries.size() << endl;
 
+	tries.Delete("the");
+	cout << "tries size:" << tries.size() << endl;
+
+	cout << "Longest prefix: " << tries.LongestPrefixOf("selslakak boom") << endl;
+
+	cout << "PrefixWith 'sh':" << endl;	 
+	vector<string> vecString = tries.keysWithPrefixOf("sh");
+	for (size_t i = 0; i < vecString.size(); i++)
+	{
+		cout << vecString[i] << endl;
+	}
 	return 0;
 }
