@@ -39,6 +39,12 @@ void _3WayQuickSort(vector<string> & vecStr, int lo, int hi, int d)
 	_3WayQuickSort(vecStr, gt+1, hi, d);
 }
 
+void _3WayQuickSort(vector<string>& vecStr)
+{
+	int w = vecStr.size();
+	_3WayQuickSort(vecStr, 0, w-1, 0);
+}
+
 int main()
 {
 	vector<string> vecString;
@@ -51,7 +57,7 @@ int main()
 	vecString.push_back("1ICK750");
 
 	int w = vecString.size();
-	_3WayQuickSort(vecString, 0, w-1, 0);
+	_3WayQuickSort(vecString);
 
 	for (size_t i = 0; i < vecString.size(); i++)
 	{
