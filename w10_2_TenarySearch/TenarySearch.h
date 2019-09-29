@@ -39,7 +39,6 @@ public:
 
 	void insert(string key, int value);
 	bool Contains(string key);
-	void Delete(string key);
 
 	bool IsEmpty();
 	int size();
@@ -50,7 +49,6 @@ public:
 private:
 	Node* put(Node* node, string key, int value, int index);
 	Node* Contains(Node* node, string key, int index);
-	void Delete(Node*& node, string key, int index);
 
 	int LongestPrefixOf(Node* node, string query, int d);
 	Node* keysWithPrefixOf(Node* node, string prefix, int d);

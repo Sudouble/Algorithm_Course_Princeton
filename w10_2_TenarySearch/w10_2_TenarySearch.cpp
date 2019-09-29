@@ -15,5 +15,29 @@ int main()
 	ts.insert("shore", 7);
 	ts.insert("the", 5);
 
+	cout << "Contain: by ? " << ts.Contains("by") << endl;
+	cout << "Contain: bys ? " << ts.Contains("bys") << endl;
+	cout << "tries size:" << ts.size() << endl;
+
+	ts.insert("the", 7);
+
+	cout << "Longest prefix: " << ts.LongestPrefixOf("selslakak boom") << endl;
+	cout << "Longest prefix: " << ts.LongestPrefixOf("shellsort") << endl;
+	cout << "Longest prefix: " << ts.LongestPrefixOf("shk") << endl;
+	
+	cout << "PrefixWith 's':" << endl;
+	vector<string> vecString = ts.keysWithPrefixOf("s");
+	for (size_t i = 0; i < vecString.size(); i++)
+	{
+		cout << vecString[i] << endl;
+	}
+
+	cout << "PrefixWith 'b':" << endl;
+	vecString.clear();
+	vecString = ts.keysWithPrefixOf("b");
+	for (size_t i = 0; i < vecString.size(); i++)
+	{
+		cout << vecString[i] << endl;
+	}
 	return 0;
 }

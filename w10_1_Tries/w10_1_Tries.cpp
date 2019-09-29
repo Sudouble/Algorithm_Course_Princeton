@@ -19,6 +19,8 @@ int main()
 	cout << "Contain: bys ? " << tries.Contains("bys") << endl;
 	cout << "tries size:" << tries.size() << endl;
 
+	tries.insert("the", 7);
+
 	tries.Delete("by");
 	tries.Delete("bys");
 	cout << "After Delete" << endl;
@@ -33,6 +35,13 @@ int main()
 
 	cout << "PrefixWith 'sh':" << endl;	 
 	vector<string> vecString = tries.keysWithPrefixOf("sh");
+	for (size_t i = 0; i < vecString.size(); i++)
+	{
+		cout << vecString[i] << endl;
+	}
+
+	cout << "PrefixWith 'she':" << endl;
+	vecString = tries.keysWithPrefixOf("she");
 	for (size_t i = 0; i < vecString.size(); i++)
 	{
 		cout << vecString[i] << endl;
