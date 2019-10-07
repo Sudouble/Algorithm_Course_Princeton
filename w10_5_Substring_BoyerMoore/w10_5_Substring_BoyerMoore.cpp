@@ -57,5 +57,11 @@ int main()
 	cout << "===========================" << endl;
 	BoyerMoore(pattern2);
 	cout << search(txt2, pattern2) << endl;
+
+	string txt3 = "fneedlehaystackneedleina";
+	string pattern3 = "needle";
+	cout << "===========================" << endl;
+	BoyerMoore(pattern3);
+	cout << search(txt3, pattern3) << endl;
 }
 
