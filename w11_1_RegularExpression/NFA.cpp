@@ -41,6 +41,11 @@ NFA::NFA(string regexp)
 		{
 			G.addEdge(Edge(i, i+1));
 		}
+		
+		if (isalpha(regexp[i]))
+		{ 
+			G.addEdge(Edge(i, i + 1));
+		}
 	}
 }
 

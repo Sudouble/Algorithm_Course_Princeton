@@ -6,7 +6,10 @@
 
 int main()
 {
-	NFA nfa("((A*B|AC)D");
+	string pattern = "((A*B|AC)D";
+	
+	NFA nfa(pattern);
+	cout << "AABD: " << nfa.recoginze("AABD") << endl;
 
-	cout << nfa.recoginze("AABD") << endl;
+	cout << "ACCBD: " << nfa.recoginze("ACCBD") << endl;
 }
