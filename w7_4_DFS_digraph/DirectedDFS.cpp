@@ -13,6 +13,20 @@ DirectedDFS::DirectedDFS(Digraph& digraph_, int v)
 	DFS(v);
 }
 
+DirectedDFS::DirectedDFS(Digraph& digraph_, vector<int> vecV)
+{
+	this->digraph = digraph_;
+
+	count = 0;
+
+	marked.resize(digraph.GetV(), false);
+	edgeTo.resize(digraph.GetV(), -1);
+
+	for (int v : vecV)
+		if (!marked[v])
+			DFS(v);
+}
+
 void DirectedDFS::DFS(int v)
 {
 	marked[v] = true;

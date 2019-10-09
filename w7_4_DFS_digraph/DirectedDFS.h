@@ -6,6 +6,7 @@ class DirectedDFS
 {
 public:
 	DirectedDFS(Digraph &digraph_, int v);
+	DirectedDFS(Digraph& digraph_, vector<int> vecV);
 	
 	bool IsMark(int v);
 	int GetCount();

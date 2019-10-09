@@ -101,6 +101,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w10_5_Substring_BoyerMoore"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w10_Substring_RabinKarp", "w10_Substring_RabinKarp\w10_Substring_RabinKarp.vcxproj", "{652DCD26-8D41-42DF-90D0-354B04D3C2B7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w11_1_RegularExpression", "w11_1_RegularExpression\w11_1_RegularExpression.vcxproj", "{13FB4151-BFC8-4BD0-A3C6-74060E8A6058}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -465,6 +467,14 @@ Global
 		{652DCD26-8D41-42DF-90D0-354B04D3C2B7}.Release|Win32.Build.0 = Release|Win32
 		{652DCD26-8D41-42DF-90D0-354B04D3C2B7}.Release|x64.ActiveCfg = Release|x64
 		{652DCD26-8D41-42DF-90D0-354B04D3C2B7}.Release|x64.Build.0 = Release|x64
+		{13FB4151-BFC8-4BD0-A3C6-74060E8A6058}.Debug|Win32.ActiveCfg = Debug|Win32
+		{13FB4151-BFC8-4BD0-A3C6-74060E8A6058}.Debug|Win32.Build.0 = Debug|Win32
+		{13FB4151-BFC8-4BD0-A3C6-74060E8A6058}.Debug|x64.ActiveCfg = Debug|x64
+		{13FB4151-BFC8-4BD0-A3C6-74060E8A6058}.Debug|x64.Build.0 = Debug|x64
+		{13FB4151-BFC8-4BD0-A3C6-74060E8A6058}.Release|Win32.ActiveCfg = Release|Win32
+		{13FB4151-BFC8-4BD0-A3C6-74060E8A6058}.Release|Win32.Build.0 = Release|Win32
+		{13FB4151-BFC8-4BD0-A3C6-74060E8A6058}.Release|x64.ActiveCfg = Release|x64
+		{13FB4151-BFC8-4BD0-A3C6-74060E8A6058}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
