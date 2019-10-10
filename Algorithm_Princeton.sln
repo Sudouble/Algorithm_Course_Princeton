@@ -103,6 +103,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w10_Substring_RabinKarp", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w11_1_RegularExpression", "w11_1_RegularExpression\w11_1_RegularExpression.vcxproj", "{13FB4151-BFC8-4BD0-A3C6-74060E8A6058}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "w11_2_Compression_Huffman", "w11_2_Compression_Huffman\w11_2_Compression_Huffman.vcxproj", "{9C11C495-CBB3-43E3-A231-87CAFC012C87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -475,6 +477,14 @@ Global
 		{13FB4151-BFC8-4BD0-A3C6-74060E8A6058}.Release|Win32.Build.0 = Release|Win32
 		{13FB4151-BFC8-4BD0-A3C6-74060E8A6058}.Release|x64.ActiveCfg = Release|x64
 		{13FB4151-BFC8-4BD0-A3C6-74060E8A6058}.Release|x64.Build.0 = Release|x64
+		{9C11C495-CBB3-43E3-A231-87CAFC012C87}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9C11C495-CBB3-43E3-A231-87CAFC012C87}.Debug|Win32.Build.0 = Debug|Win32
+		{9C11C495-CBB3-43E3-A231-87CAFC012C87}.Debug|x64.ActiveCfg = Debug|x64
+		{9C11C495-CBB3-43E3-A231-87CAFC012C87}.Debug|x64.Build.0 = Debug|x64
+		{9C11C495-CBB3-43E3-A231-87CAFC012C87}.Release|Win32.ActiveCfg = Release|Win32
+		{9C11C495-CBB3-43E3-A231-87CAFC012C87}.Release|Win32.Build.0 = Release|Win32
+		{9C11C495-CBB3-43E3-A231-87CAFC012C87}.Release|x64.ActiveCfg = Release|x64
+		{9C11C495-CBB3-43E3-A231-87CAFC012C87}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
