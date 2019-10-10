@@ -16,8 +16,19 @@
 
 int main()
 {
+
+	// 示例版，支持字符串长度小于255的！！
+	string orgin = "ABRACADABRA!";
+
 	Huffman huffman;
-	huffman.buildTries("ABRACADABRA!");
+	string out = huffman.compress(orgin);
+
+	cout << "Length:" << out.length()
+		<< "  " << out << endl;
+
+	// ====================================================
+	cout << "Origin: " << orgin << endl;
+	cout << "Restored: " << huffman.expand(out) << endl;
 
 	return 0;
 }

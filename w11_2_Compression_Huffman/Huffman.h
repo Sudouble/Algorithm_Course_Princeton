@@ -34,7 +34,7 @@ struct Node {
 		right = right_;
 	}
 
-	bool isLead()
+	bool isLeaf()
 	{
 		return left == NULL && right == NULL;
 	}
@@ -45,18 +45,40 @@ struct Node {
 			return true;
 		return false;
 	}
+
+	void operator=(const Node& that)
+	{
+		freq = that.freq;
+		value = that.value;
+		left = that.left;
+		right = that.right;
+	}
 };
 
 class Huffman
 {
 public:
 	Huffman();
+	string compress(string text);
+	string expand(string s);
 
+private:
 	void buildTries(string text);
-	void compress(string text);
+	void buildCode(Node& root);
+	void buildCode(vector<string>& stCode, Node* x, string s);
 
+	string writeTries(Node &root);
+	void writeTries(Node* node, string &s);
+
+	string readTries(string &s);
+	Node* readTries(string& s, int &i);
+
+
+	char toChar(string s, int begin, int count);
+	string toByte(char c);
 private:
 	Node root;
 	const int R = 256;
+	vector<string> stCode;
 };
 
