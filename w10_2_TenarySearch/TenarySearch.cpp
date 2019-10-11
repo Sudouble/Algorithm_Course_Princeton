@@ -15,6 +15,14 @@ bool TenarySearch::Contains(string key)
 	return Contains(root, key, 0) != NULL;
 }
 
+int TenarySearch::get(string key)
+{
+	Node* node = get(root, key, 0);
+	if (node == NULL)
+		throw "No Key";
+	return node->value;
+}
+
 bool TenarySearch::IsEmpty()
 {
 	return size() == 0;
@@ -46,24 +54,19 @@ vector<string> TenarySearch::keysWithPrefixOf(string prefix)
 Node* TenarySearch::put(Node* node, string key, int value, int index)
 {
 	if (node == NULL)
-		node = new Node(key[index], -1);
-
-	if (key.length() == index+1)
 	{
-		if (node->value == -1)
-			n++;
-
-		node->value = value;
-		return node;
+		node = new Node(key[index], -1);
+		n++;		
 	}
 
 	if (key[index] < node->key)
 		node->left = put(node->left, key, value, index);
 	else if (key[index] > node->key)
 		node->right = put(node->right, key, value, index);
-	else 
+	else if (index < key.length() - 1)
 		node->middle = put(node->middle, key, value, index + 1);
-
+	else
+		node->value = value;
 	return node;
 }
 
@@ -72,19 +75,29 @@ Node* TenarySearch::Contains(Node* node, string key, int index)
 	if (node == NULL)
 		return NULL;
 
-	if (key.length() == index+1)
-	{
-		if (node->value != -1 && node->key == key[index])
-			return node;
-		return NULL;
-	}
-
 	if (key[index] < node->key)
 		return Contains(node->left, key, index);
 	else if (key[index] > node->key)
 		return Contains(node->right, key, index);
-	else
+	else if (index < key.length() - 1)
 		return Contains(node->middle, key, index + 1);
+	else
+		return node;
+}
+
+Node* TenarySearch::get(Node* node, string key, int index)
+{
+	if (node == NULL)
+		return NULL;
+
+	if (key[index] < node->key)
+		return get(node->left, key, index);
+	else if (key[index] > node->key)
+		return get(node->right, key, index);
+	else if (index < key.length() - 1)
+		return get(node->middle, key, index + 1);
+	else
+		return node;
 }
 
 int TenarySearch::LongestPrefixOf(Node* node, string query, int d)

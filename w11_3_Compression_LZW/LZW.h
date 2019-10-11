@@ -7,8 +7,12 @@ using namespace std;
 class LZW
 {
 public:
-	void compress(string txt);
-	void expand(string txt);
+	string compress(string txt);
+	string expand(string txt);
+
+private:
+	char toChar(string s, int begin, int count);
+	string toByte(char c);
 
 private:
 

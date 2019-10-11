@@ -9,5 +9,9 @@ int main()
 	string txt = "ABRACADABRABRABRA";
 
 	LZW lzw;
-	lzw.compress(txt);
+	string result = lzw.compress(txt);
+	cout << result << endl;
+
+	cout << "Origin:" << txt << endl;
+	cout << "Restored: " << lzw.expand(result) << endl;
 }
