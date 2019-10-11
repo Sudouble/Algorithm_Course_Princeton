@@ -74,7 +74,7 @@ Node* TenarySearch::Contains(Node* node, string key, int index)
 
 	if (key.length() == index+1)
 	{
-		if (node->value != -1)
+		if (node->value != -1 && node->key == key[index])
 			return node;
 		return NULL;
 	}
