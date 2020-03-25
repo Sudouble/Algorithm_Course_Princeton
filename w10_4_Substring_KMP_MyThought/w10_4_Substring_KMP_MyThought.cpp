@@ -267,7 +267,7 @@ string form_array_string(vector<int> vec)
 	char tmp[100] = {0};
 	for (int i = 0; i < vec.size(); i++)
 	{
-		sprintf(tmp, "%d ", vec[i]);
+		sprintf_s(tmp, 100,"%d ", vec[i]);
 		str +=  tmp;
 	}
 	str += "\r\n";
