@@ -6,90 +6,6 @@
 #include <cassert>
 using namespace std;
 
-#define GET_FUNC_NAME(name) string(#name).c_str()
-
-
-template<class T>
-bool test_value(const T& expected, const T& actual, string strDescrib="", bool ToCoutWhenFail=true)
-{
-	if (expected != actual)
-	{
-		if (ToCoutWhenFail)
-			cout << strDescrib.c_str() << " not equal! Expected: " << expected << " Actual:" << actual << endl;
-		return false;
-	}
-	else
-	{
-		//cout << strDescrib.c_str() << " OK, value: " << expected << endl;
-		return true;
-	}
-}
-
-string form_array_string(vector<int> vec)
-{
-	string str = "";
-
-	char tmp[100] = {0};
-	for (int i = 0; i < vec.size(); i++)
-	{
-		sprintf(tmp, "%d ", vec[i]);
-		str +=  tmp;
-	}
-	str += "\r\n";
-	return str;
-}
-
-void test_array(const vector<int> &vecExpected, const vector<int> &vecActual, bool ToCoutWhenFail=true)
-{
-	if (!test_value(vecExpected.size(), vecActual.size(), "Array size", ToCoutWhenFail))
-		return;
-	
-	for (int j = 0; j < vecExpected.size(); j++)
-	{
-		if (vecExpected[j] != vecActual[j])
-		{
-			if (ToCoutWhenFail)
-			{
-				cout << "Error!" << endl;
-
-				cout << "Expected array: " << form_array_string(vecExpected).c_str();
-				cout << "Actual array: " << form_array_string(vecActual).c_str();
-			}			
-			return;
-		}
-	}
-	//cout << "OK!" << endl;
-	//cout << "Expected array: " << form_array_string(vecExpected).c_str();
-	//cout << "Actual array: " << form_array_string(vecActual).c_str();
-	return;
-}
-
-struct ST_INPUT_FORM
-{
-	string text;
-	string pattern;
-	vector<int> expected_next;
-	int expected_pos;
-
-	ST_INPUT_FORM()
-	{
-		text = "";
-		pattern = "";
-		expected_pos = -1;
-		expected_next.clear();
-	}
-
-	void initNext(int *array, int len)
-	{
-		expected_next.clear();
-		for (int i = 0; i < len; i++)
-		{
-			int value = *(array+i);
-			expected_next.push_back(value);
-		}
-	}
-};
-
 typedef vector<int> (*FUNC_NEXT_CALC)(string &pattern);
 
 // 我的计算方法
@@ -139,8 +55,8 @@ vector<int> InitVectorNext_my_method(string& pattern) {
 	return vecNext;
 }
 
-// 作者论文中所描述的方法
-vector<int> InitVectorNext_author_method(string &pattern)
+// 作者论文中所描述的方法_调整结构前的
+vector<int> init_next_PaperMethod_1(string &pattern)
 {
 	cout << "*******Using function: " << __FUNCTION__ << "*******" << endl;
 
@@ -150,28 +66,40 @@ vector<int> InitVectorNext_author_method(string &pattern)
 	// 初始条件：j=0时，i肯定是不存在的定义为-1，其他位置值任意。
 	next[0] = -1;
 
-	//// 优化前的代码
-	//vector<int> f;
-	//f.resize(N, -1);
-	//// 初始条件：j=0时，i肯定是不存在的定义为-1，其他位置值任意。
-	//f[0] = -1;
+	// 优化前的代码
+	vector<int> f;
+	f.resize(N, -1);
+	// 初始条件：j=0时，i肯定是不存在的定义为-1，其他位置值任意。
+	f[0] = -1;
 
-	//for (int j = 0; j < N-1;) {
-	//	// 先找到pat[1,i-1]=pat[j-i+1,j-1]的情况
-	//	int t = f[j];
-	//	while (t > -1 && pattern[j] != pattern[t])
-	//		t = next[t];
-	//	f[j + 1] = t + 1;
-	//	j++;
+	for (int j = 0; j < N-1;) {
+		// 先找到pat[1,i-1]=pat[j-i+1,j-1]的情况
+		int t = f[j];
+		while (t > -1 && pattern[j] != pattern[t])
+			t = next[t];
+		f[j + 1] = t + 1;
+		j++;
 
-	//	// 判断pat[i]和pat[j]的情况
-	//	if (pattern[j] == pattern[f[j]])
-	//		next[j] = next[f[j]];
-	//	else
-	//	{
-	//		next[j] = f[j];
-	//	}
-	//}
+		// 判断pat[i]和pat[j]的情况
+		if (pattern[j] == pattern[f[j]])
+			next[j] = next[f[j]];
+		else
+		{
+			next[j] = f[j];
+		}
+	}		
+	return next;
+}		
+// 作者论文中所描述的方法_微调结构后的
+vector<int> init_next_PaperMethod_2(string &pattern)
+{
+	cout << "*******Using function: " << __FUNCTION__ << "*******" << endl;
+
+	int N = pattern.length();
+	vector<int> next;	
+	next.resize(N, 0); 
+	// 初始条件：j=0时，i肯定是不存在的定义为-1，其他位置值任意。
+	next[0] = -1;
 
 	// 优化后的代码	
 	int t = -1; // 初始条件：j=0时，i肯定是不存在的定义为-1，其他位置值任意。
@@ -207,6 +135,33 @@ int search(string& strText, string& pattern, vector<int> &vecNext) {
 	return -1;
 }
 
+
+struct ST_INPUT_FORM
+{
+	string text;
+	string pattern;
+	vector<int> expected_next;
+	int expected_pos;
+
+	ST_INPUT_FORM()
+	{
+		text = "";
+		pattern = "";
+		expected_pos = -1;
+		expected_next.clear();
+	}
+
+	void initNext(int *array, int len)
+	{
+		expected_next.clear();
+		for (int i = 0; i < len; i++)
+		{
+			int value = *(array+i);
+			expected_next.push_back(value);
+		}
+	}
+};
+
 void testCalcLongestFixed();
 
 vector<FUNC_NEXT_CALC> initTestFunc();
@@ -231,7 +186,8 @@ vector<FUNC_NEXT_CALC> initTestFunc()
 {
 	vector<FUNC_NEXT_CALC> vecFunc;
 	vecFunc.push_back(InitVectorNext_my_method);
-	vecFunc.push_back(InitVectorNext_author_method);
+	vecFunc.push_back(init_next_PaperMethod_1);
+	vecFunc.push_back(init_next_PaperMethod_2);
 
 	return vecFunc;
 }
@@ -271,7 +227,7 @@ vector<ST_INPUT_FORM> initTestInput()
 		testCase.pattern = "rab";
 		int a[] = {-1, 0, 0};
 		testCase.initNext(a, sizeof(a)/sizeof(int));
-		testCase.expected_pos = 9;
+		testCase.expected_pos = 8;
 
 		vecInput.push_back(testCase);
 	}
@@ -286,6 +242,61 @@ void testCalcLongestFixed()
 
 	string s2 = "aaabd"; // aaabx处失配
 	assert(calcLongestFixed(s2, pattern) == 0);
+}
+
+template<class T>
+bool test_value(const T& expected, const T& actual, string strDescrib="", bool ToCoutWhenFail=true)
+{
+	if (expected != actual)
+	{
+		if (ToCoutWhenFail)
+			cout << strDescrib.c_str() << " not equal! Expected: " << expected << " Actual:" << actual << endl;
+		return false;
+	}
+	else
+	{
+		//cout << strDescrib.c_str() << " OK, value: " << expected << endl;
+		return true;
+	}
+}
+
+string form_array_string(vector<int> vec)
+{
+	string str = "";
+
+	char tmp[100] = {0};
+	for (int i = 0; i < vec.size(); i++)
+	{
+		sprintf(tmp, "%d ", vec[i]);
+		str +=  tmp;
+	}
+	str += "\r\n";
+	return str;
+}
+
+void test_array(const vector<int> &vecExpected, const vector<int> &vecActual, bool ToCoutWhenFail=true)
+{
+	if (!test_value(vecExpected.size(), vecActual.size(), "Array size", ToCoutWhenFail))
+		return;
+
+	for (int j = 0; j < vecExpected.size(); j++)
+	{
+		if (vecExpected[j] != vecActual[j])
+		{
+			if (ToCoutWhenFail)
+			{
+				cout << "Error!" << endl;
+
+				cout << "Expected array: " << form_array_string(vecExpected).c_str();
+				cout << "Actual array: " << form_array_string(vecActual).c_str();
+			}			
+			return;
+		}
+	}
+	//cout << "OK!" << endl;
+	//cout << "Expected array: " << form_array_string(vecExpected).c_str();
+	//cout << "Actual array: " << form_array_string(vecActual).c_str();
+	return;
 }
 
 void testSuite(vector<FUNC_NEXT_CALC> &vecFunc, vector<ST_INPUT_FORM> &vecInput)
